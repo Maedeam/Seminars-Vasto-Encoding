@@ -1,0 +1,1913 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:xi="http://www.w3.org/2001/XInclude"
+    xmlns:svg="http://www.w3.org/2000/svg" xmlns:math="http://www.w3.org/1998/Math/MathML"
+    xmlns:enrich="http://projects.oucs.ox.ac.uk/ENRICH/ODD/RomaResults/enrich.rng">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title>Storia Fiorentina</title>
+                <author xml:id="BV">Benedetto Varchi</author>
+                <respStmt>
+                    <resp>Responsabile progetto</resp>
+                    <persName xml:id="DB">Dario Brancato</persName>
+                </respStmt>
+            </titleStmt>
+            <publicationStmt>
+                <publisher>VaSto Project;</publisher>
+                <pubPlace>Bologna</pubPlace>
+                <date>2022</date>
+                <availability>
+                    <p>Questa risorsa digitale è liberamente accessibile per uso personale o
+                        scientifico. Ogni uso commerciale è vietato</p>
+                </availability>
+            </publicationStmt>
+            <sourceDesc>
+                <p>B. Varchi, Storia fiorentina </p>
+                <p>
+                    <listPerson>
+                        <person xml:id="Cosimo">
+                            <persName type="pers_citata" sameAs="http://viaf.org/viaf/121802096"
+                                ref="http://www.treccani.it/enciclopedia/cosimo-de-medici_(Dizionario-Biografico)"
+                                >Cosimo de' Medici</persName>
+                        </person>
+                        <person xml:id="Puccini">
+                            <persName type="person" ref="#Puccini">Capitan Pandolfo
+                                Puccini</persName>
+                        </person>
+                        <person xml:id="Giovanni">
+                            <persName type="person" ref="#Giovanni">signor Giovanni</persName>
+                        </person>
+                        <person xml:id="Dieci">
+                            <persName type="person" ref="#Dieci">Signori Dieci</persName>
+                        </person>
+                        <person xml:id="Nero">
+                            <persName type="person" ref="#Giovanni">Oratore Marco del
+                                Nero</persName>
+                        </person>
+                        <person xml:id="CSoderini">
+                            <persName type="person" ref="#CSoderini">Commessario Soderini</persName>
+                        </person>
+                        <person xml:id="Lutrec">
+                            <persName type="person" ref="#Giovanni">Monsignore di Lutrec</persName>
+                        </person>
+                        <person xml:id="Horazio">
+                            <persName type="person" ref="#Horazio">signore Horazio</persName>
+                        </person>
+                        <person xml:id="Giovambatista">
+                            <persName type="person" ref="#Giovambatista">Capitano Giovambatista
+                                Borghesi</persName>
+                        </person>
+                        <person xml:id="Caselpo">
+                            <persName type="person" ref="#Caselpo">Contazzo da Caselpo</persName>
+                        </person>
+                        <person xml:id="Naldini">
+                            <persName type="person" ref="#Naldini">Giovanni Naldini</persName>
+                        </person>
+                        <person xml:id="Malatesta">
+                            <persName type="person" ref="#Malatesta">Malatesta</persName>
+                        </person>
+                        <person xml:id="Cancelliere">
+                            <persName type="person" ref="#Cancelliere">ser Cristofano
+                                Cancelliere</persName>
+                        </person>
+                        <person xml:id="Uguccioni">
+                            <persName type="person" ref="#Uguccioni">Captain Giovanni
+                                Uguccioni</persName>
+                        </person>
+                        <person xml:id="daColle">
+                            <persName type="person" ref="#daColle">Giovanni da Colle</persName>
+                        </person>
+                        <person xml:id="Martelli">
+                            <persName type="person" ref="#Martelli">Lorenzo Martelli</persName>
+                        </person>
+                        <person xml:id="Arezzo">
+                            <persName type="person" ref="#Arezzo">Capitano d'Arezzo</persName>
+                        </person>
+                        <person xml:id="Bargello">
+                            <persName type="person" ref="#Bargello">Bargello</persName>
+                        </person>
+                        <person xml:id="Rinieri">
+                            <persName type="person" ref="#Rinieri">Giorgio Rinieri</persName>
+                        </person>
+                        <person xml:id="Gastigato">
+                            <persName type="person" ref="#Gastigato">Pandolfo Gastigato</persName>
+                        </person>
+                        <person xml:id="GSoderini">
+                            <persName type="person" ref="#GSoderini">Giovambatista
+                                Soderini</persName>
+                        </person>
+                        <person xml:id="Cristofano">
+                            <persName type="person" ref="#Cristofano">Ser Cristofano</persName>
+                        </person>
+                        <person xml:id="Vettori">
+                            <persName type="person" ref="#Vettori">Francesco Vettori</persName>
+                        </person>
+                        <person xml:id="Alamanni">
+                            <persName type="person" ref="#xxx">Jacopo Alamanni</persName>
+                        </person>
+                        <person xml:id="Dante">
+                            <persName type="person" ref="#Dante">Dante</persName>
+                        </person>
+                        <person xml:id="Mercatanti">
+                            <persName type="person" ref="#Mercatanti">Mercatanti</persName>
+                        </person>
+                        <person xml:id="Sderini">
+                            <persName type="person" ref="#Sderini">M. Giovanvettorio di Tommaso
+                                Sderini</persName>
+                        </person>
+                        <person xml:id="Panciatichi">
+                            <persName type="person" ref="#Panciatichi">Bartolomeo di Francesco
+                                Panciatichi</persName>
+                        </person>
+                        <person xml:id="Bardi">
+                            <persName type="person" ref="#Bardi">Migiotto di Bardo de'
+                                Bardi</persName>
+                        </person>
+                        <person xml:id="Pitti">
+                            <persName type="person" ref="#Pitti">Buonaccorso di Lorenzo
+                                Pitti</persName>
+                        </person>
+                        <person xml:id="Calandri">
+                            <persName type="person" ref="#Calandri">Francesco di Filippo
+                                Calandri</persName>
+                        </person>
+                        <person xml:id="Albizi">
+                            <persName type="person" ref="#Albizi">Antonfrancesco
+                                degl'Albizi</persName>
+                        </person>
+                        <person xml:id="Carnesecchi">
+                            <persName type="person" ref="#Carnesecchi">Zanobi di Francesco
+                                Carnesecchi</persName>
+                        </person>
+                        <person xml:id="Nerli">
+                            <persName type="person" ref="#Nerli">Tanai di Piero de Nerli</persName>
+                        </person>
+                        <person xml:id="Borgherini">
+                            <persName type="person" ref="#Borgherini">Giovanni di Salvi
+                                Borgherini</persName>
+                        </person>
+                        <person xml:id="Luca">
+                            <persName type="person" ref="#Luca">Giovanni di Zanobi di Maestro
+                                Luca</persName>
+                        </person>
+                        <person xml:id="Turena">
+                            <persName type="person" ref="#Turena">Visconte di Turena</persName>
+                        </person>
+                        <person xml:id="Marco">
+                            <persName type="person" ref="#Marco">Marco Capitano di Pisa</persName>
+                        </person>
+                        <person xml:id="Gondi">
+                            <persName type="person" ref="#Gondi">Carlo Gondi</persName>
+                        </person>
+                        <person xml:id="Guerrino">
+                            <persName type="person" ref="#Guerrino">Alessandro Guerrino</persName>
+                        </person>
+                        <person xml:id="Alfonso">
+                            <persName type="person" ref="#Alfonso">Alfonso duca di
+                                Ferrara</persName>
+                        </person>
+                        <person xml:id="Nobili">
+                            <persName type="person" ref="#Nobili">Lodovico de' Nobili</persName>
+                        </person>
+                        <person xml:id="Baldassarre">
+                            <persName type="person" ref="#Baldassarre">messer Baldassarre</persName>
+                        </person>
+                        <person xml:id="Poggibonsi">
+                            <persName type="person" ref="#Poggibonsi">Mainardo Cavalcanti à
+                                Poggibonsi</persName>
+                        </person>
+                        <person xml:id="Pucci">
+                            <persName type="person" ref="#Pucci">Antonio Pucci</persName>
+                        </person>
+                        <person xml:id="Orange">
+                            <persName type="person" ref="#Orange">Principe d’Orange</persName>
+                        </person>
+                        <person xml:id="Navarro">
+                            <persName type="person" ref="#Navarro">Pietro Navarro</persName>
+                        </person>
+                        <person xml:id="Caracciolo">
+                            <persName type="person" ref="#Caracciolo">Sergiano Caracciolo</persName>
+                        </person>
+                        <person xml:id="Guasto">
+                            <persName type="person" ref="#Guasto">Marchese del Guasto</persName>
+                        </person>
+                        <person xml:id="Tiepolo">
+                            <persName type="person" ref="#Tiepolo">Niccolò Tiepolo</persName>
+                        </person>
+                        <person xml:id="Colonna">
+                            <persName type="person" ref="#Colonna">Signore Ascanio
+                                Colonna</persName>
+                        </person>
+                        <person xml:id="Capponi">
+                            <persName type="person" ref="#Capponi">Gonfaloniere Niccolo
+                                Capponi</persName>
+                        </person>
+                        <person xml:id="Amadori">
+                            <persName type="person" ref="#Amadori">Bartolommeo di Lorenzo
+                                Amadori</persName>
+                        </person>
+                        <person xml:id="BeneGiovanni">
+                            <persName type="person" ref="#BeneGiovanni">Benedetto di Tommaso
+                                Giovanni</persName>
+                        </person>
+                        <person xml:id="Girolami">
+                            <persName type="person" ref="#Girolami">Piero d’Antonio
+                                Girolami</persName>
+                        </person>
+                        <person xml:id="Guidacci">
+                            <persName type="person" ref="#Guidacci">Veri di Girolamo
+                                Guidacci</persName>
+                        </person>
+                        <person xml:id="Venturi">
+                            <persName type="person" ref="#Venturi">Piero di Neri Venturi</persName>
+                        </person>
+                        <person xml:id="Mori">
+                            <persName type="person" ref="#Mori">Girolamo di Zanobi Mori</persName>
+                        </person>
+                        <person xml:id="Bucherelli">
+                            <persName type="person" ref="#Bucherelli">Zanobi d’Antonio
+                                Bucherelli</persName>
+                        </person>
+                        <person xml:id="Marucelli">
+                            <persName type="person" ref="#Marucelli">Ridolfo di Giuliano
+                                Marucelli</persName>
+                        </person>
+                    </listPerson>
+                    <listPlace>
+                        <place xml:id="Firenze">
+                            <settlement type="città">Firenze</settlement>
+                        </place>
+                        <place xml:id="Romagna">
+                            <settlement type="città">Romagna</settlement>
+                        </place>
+                        <place xml:id="Ancona">
+                            <settlement type="città">Marca d’Ancona</settlement>
+                        </place>
+                        <place xml:id="Severo">
+                            <settlement type="città">San Severo</settlement>
+                        </place>
+                        <place xml:id="Puglia">
+                            <settlement type="città">Puglia</settlement>
+                        </place>
+                        <place xml:id="Troia">
+                            <settlement type="città">Troia</settlement>
+                        </place>
+                        <place xml:id="Siena">
+                            <settlement type="città">Siena</settlement>
+                        </place>
+                        <place xml:id="Ispelle">
+                            <settlement type="città">Ispelle</settlement>
+                        </place>
+                        <place xml:id="Aquila">
+                            <settlement type="città">Aquila</settlement>
+                        </place>
+                        <place xml:id="Urbino">
+                            <settlement type="città">Urbino</settlement>
+                        </place>
+                        <place xml:id="Spelle">
+                            <settlement type="città">Spelle</settlement>
+                        </place>
+                        <place xml:id="Cortona">
+                            <settlement type="Roccha">Roccha di Cortona</settlement>
+                        </place>
+                        <place xml:id="Roccha">
+                            <settlement type="città">Roccha</settlement>
+                        </place>
+                        <place xml:id="Narni">
+                            <settlement type="città">Narni</settlement>
+                        </place>
+                        <place xml:id="fortLivorno">
+                            <settlement type="fortezza">fortezza di Livorno</settlement>
+                        </place>
+                        <place xml:id="Volterra">
+                            <settlement type="torre">torre di Volterra</settlement>
+                        </place>
+                        <place xml:id="CitaPisa">
+                            <settlement type="cittadella">la Roccha della cittadella di
+                                Pisa</settlement>
+                        </place>
+                        <place xml:id="chiesaNunziata">
+                            <settlement type="chiesa">chiesa della Madonna della
+                                Nunziata</settlement>
+                        </place>
+                        <place xml:id="portaBastiano">
+                            <settlement type="porta">porta di san Bastiano</settlement>
+                        </place>
+                        <place xml:id="Livorno">
+                            <settlement type="città">Livorno</settlement>
+                        </place>
+                        <place xml:id="Pisa">
+                            <settlement type="città">Pisa</settlement>
+                        </place>
+                        <place xml:id="Ferrara">
+                            <settlement type="città">Ferrara</settlement>
+                        </place>
+                        <place xml:id="Venice">
+                            <settlement type="città">Venice</settlement>
+                        </place>
+                        <place xml:id="Cervia">
+                            <settlement type="città">Cervia</settlement>
+                        </place>
+                        <place xml:id="Ravenna">
+                            <settlement type="città">Ravenna</settlement>
+                        </place>
+                        <place xml:id="Modena">
+                            <settlement type="città">Modena</settlement>
+                        </place>
+                        <place xml:id="Reggio">
+                            <settlement type="città">Reggio</settlement>
+                        </place>
+                        <place xml:id="Pistoia">
+                            <settlement type="città">Pistoia</settlement>
+                        </place>
+                        <place xml:id="Napoli">
+                            <settlement type="città">Napoli</settlement>
+                        </place>
+                        <place xml:id="Melano">
+                            <settlement type="città">Melano</settlement>
+                        </place>
+                        <place xml:id="Melfi">
+                            <settlement type="città">Melfi</settlement>
+                        </place>
+                    </listPlace>
+                </p>
+            </sourceDesc>
+        </fileDesc>
+        <profileDesc>
+            <handNotes>
+                <handNote xml:id="baldini"/>
+                <handNote xml:id="varchi"/>
+                <handNote xml:id="bonsi"/>
+                <!-- The full name of "antella" is: Alessandro Del Serra -->
+                <handNote xml:id="serra"/>
+                <!-- The full name of "antella" is: Niccolò dell’Antella -->
+                <handNote xml:id="antella"/>
+            </handNotes>
+        </profileDesc>
+        <revisionDesc>
+            <listChange ordered="true">
+                <!--  da inserire nel text, con ref="#baldini"  -->
+                <change xml:id="ST1">First stage</change>
+                <change xml:id="ST2">Second stage, pencil revisions</change>
+                <change xml:id="ST3">Third stage, censorship</change>
+            </listChange>
+        </revisionDesc>
+    </teiHeader>
+    <sourceDoc>
+        <surface>
+            <zone xml:id="z179r" n="379">
+                <add place="margin top right">179</add>
+                <add place="margin top right">379</add>
+                <line xml:id="z179rline01" rend="centered">. VI .</line>
+                <line xml:id="z179rline02" rend="centered">DELLA STORIA FIORENTINA DI</line>
+                <line xml:id="z179rline03" rend="centered">BENEDETTO VARCHI, COMINCIATA DALL’</line>
+                <line xml:id="z179rline04" rend="centered">ANNO MILLECINQUECENTOVENTISETTE</line>
+                <line xml:id="z179rline05" rend="centered">À L’ <choice>
+                        <abbr>ILLMO</abbr>
+                        <expan>ILLUSTRISSIMO</expan>
+                    </choice> ET <choice>
+                        <abbr>ECCELLMO</abbr>
+                        <expan>ECCELLENTISSIMO</expan>
+                    </choice> SIGNOR</line>
+                <line xml:id="z179rline06" rend="centered">COSIMO DE’MEDICI, DUCA</line>
+                <line xml:id="z179rline07" rend="centered">SECONDO DI FIRENZE</line>
+                <line xml:id="z179rline08" rend="centered">SESTO LIBRO.</line>
+                <line xml:id="z179rline09">TROVAVASI in questo tempo nelle segrete per dovere esser.
+                    dalla</line>
+                <line xml:id="z179rline10">Quarantia giudicato il Capitan Pandolfo Puccini. Costui,
+                    già gio-</line>
+                <line xml:id="z179rline11">vane molto, e sviato essendo, venuto à parole <metamark
+                        rend="underlined" spanTo="#z179rline12w01"/>nella via del Giard-</line>
+                <line xml:id="z179rline12">dino dietro san Piero maggiore <w xml:id="z179rline12w01"
+                        >col</w> Priore col de’ Sassetti <add place="below">^</add>
+                    <add place="margin right" hand="#baldini">con uno stiletto <lb/>
+                        l’uccise,</add>,<metamark rend="underlined" spanTo="#z179rline17w01"/>piu
+                    tosto</line>
+                <line xml:id="z179rline13">sgherro, e soldato, che Prete, mentre giucavano alle
+                    pallottole, fit-</line>
+                <line xml:id="z179rline14"> togli uno stiletto nel petto l'ammazzò di fatto. Alla
+                    cui morte</line>
+                <line xml:id="z179rline15">io, che picciolo fanciullo era, e quindi non lunge tra 'l
+                    canto</line>
+                <line xml:id="z179rline16">di Nello, e quello della Rondine à casa stava,
+                        impensatame<add place="inline">n</add>te,</line>
+                <line xml:id="z179rline17">e per caso <w xml:id="z179rline17w01">m'abbattei</w>. Per
+                    lo quale micidio egli, havuto colla tro<add place="inline">m</add>-</line>
+                <line xml:id="z179rline18">ba bando del capo, se n’andò, come facevano in quel tempo
+                    quasi</line>
+                <line xml:id="z179rline19">tutti i Fiorentini, che soldati essere volevano, à
+                    trovare il <choice>
+                        <abbr>sor</abbr>
+                        <expan>signor</expan>
+                    </choice> Gio-</line>
+                <line xml:id="z179rline20">vanni, <del hand="#bonsi">dal quale con grandissima
+                        fatica</del>, dal quale con gran-</line>
+                <line xml:id="z179rline21">dissima fatica, eziandio dopo che ebbe, da lui stesso
+                    esercitato</line>
+                <line xml:id="z179rline22">e ammaestrato, combattuto, e vinto in isteccato, potè la
+                    compa-</line>
+                <line xml:id="z179rline23">gnia ottenere; ma morto il Signore, e lo stato di Firenze
+                    rivolto,</line>
+                <line xml:id="z179rline24">fù, havendo egli il bando ricuperato, per le cagioni, che
+                    ne i</line>
+                <line xml:id="z179rline25">libri di sopra si dissero, da’ Signori Dieci condotto, e
+                    à soldo</line>
+                <line xml:id="z179rline26">preso. La cagione, perche egli in pregione si trovava, fù
+                    questa.</line>
+            </zone>
+            <zone xml:id="z179v" n="380">
+                <add place="margin left top">380</add>
+                <line xml:id="z179vline01">Il commessario Soderini sollecitato dall’Oratore Marco
+                    del Nero, e da</line>
+                <line xml:id="z179vline02">Monsignore di Lutrec, il quale per la via della Romagna
+                    se n’era nella</line>
+                <line xml:id="z179vline03">Marca d’Ancona passato, e di gia giunto à San Severo,
+                    s’era qui-</line>
+                <line xml:id="z179vline04">vi per dovere far la massa, e rassegnare tutte le sue
+                    genti fermato, </line>
+                <line xml:id="z179vline05">con animo di voler seguire, e affrontare l’esercito
+                    Imperiale, il quale</line>
+                <line xml:id="z179vline06">nella Puglia nelle contrade dintorno à Troia s’era
+                    ridotto, e fortifi-</line>
+                <line xml:id="z179vline07">cato, fece intendere al signore Horazio, e à tutti i
+                    Capitani, che solleci-</line>
+                <line xml:id="z179vline08">tamente s’apprestassero per dovere andare nel Regno, e
+                    quivi coll’</line>
+                <line xml:id="z179vline09">esercito de’ Franzesi congiugnersi: per lo che Pandolfo,
+                    il quale nel</line>
+                <line xml:id="z179vline10">vero non meno arrogante era, e fastidioso, che valente,
+                    gito à trovar-</line>
+                <line xml:id="z179vline11">lo: gli disse non solo, che voleva avanti, che di quindi
+                    si movesse, che la</line>
+                <line xml:id="z179vline12">sua banda, che gia dodici giorni del mese nuovo
+                    sopraservito havea,</line>
+                <line xml:id="z179vline13">pagata fusse, ma che egli farebbe bene ad haver sempre
+                    con esso seco</line>
+                <line xml:id="z179vline14">almeno una paga di più per tutte quante le fanterie.
+                        Giova<add place="inline">m</add>bati-</line>
+                <line xml:id="z179vline15">sta, il qual non solo col nome, e come cittadino, ma
+                    ancora co’ fatti,</line>
+                <line xml:id="z179vline16">e come soldato, commessario esser voleva; e di gia odiava
+                    l’inso-</line>
+                <line xml:id="z179vline17">lenza intollerabile, e la rapacità di quelle Genti, e
+                    massimamente</line>
+                <line xml:id="z179vline18">del Contazzo da Caselpo, il quale egli fece poi, fingendo
+                    poi di mandar-</line>
+                <line xml:id="z179vline19">lo in una spedizione, ammazzare, e del Puccino, il quale
+                    fomen-</line>
+                <line xml:id="z179vline20">tato da Horazio, e per sua natura superbo aspirava con
+                    non <add place="margin right" hand="#varchi">meno</add></line>
+                <line xml:id="z179vline21"><add place="margin left" hand="#varchi">vana arroganza,
+                        che arro- <lb/>gante</add><del hand="#varchi">minore orgoglio, che</del>
+                    vanità al nome, et alla gloria del signor Giovan-</line>
+                <line xml:id="z179vline22">ni, gli rispose con un mal viso, questo non esser
+                    l’ufizio di lui,</line>
+                <line xml:id="z179vline23">et come quegli, che havea in animo di regolare colla
+                    prudenza, et</line>
+                <line xml:id="z179vline24">autorità sua l’inestimabile audacia di quelle bande,
+                    soggiunse, che</line>
+                <line xml:id="z179vline25">attendesse à correggere i suoi fanti, e fedelmente
+                    servire; e del</line>
+                <pb/>
+            </zone>
+            <zone xml:id="z180r" n="381">
+                <add place="margin right top">180</add>
+                <add place="margin right top">381</add>
+                <line xml:id="z180rline01">restante lasciasse il pensiero, e la cura à lui; che del
+                    suo debito </line>
+                <line xml:id="z180rline02">non mancherebbe; benche egli Fiorentino essendo, eziandio
+                    se paga- </line>
+                <line xml:id="z180rline03">to non fusse, servire la sua Republica in tempi tanto
+                    stretti, e così </line>
+                <line xml:id="z180rline04">calamitosi doverrebbe. Al Puccino, che si teneva da
+                    quello, che egli </line>
+                <line xml:id="z180rline05">era, e da molto più, parvero strane quelle parole, e
+                    cercando di scu- </line>
+                <line xml:id="z180rline06">sarsi, come sapeva, e poteva il meglio, gli si levò tutto
+                    confuso di </line>
+                <line xml:id="z180rline07">nanzi. Occorse poi, che egli la mattina stessa ,nella
+                    quale partire </line>
+                <line xml:id="z180rline08">si dovevano, mentre andavano i tamburini in volta,
+                    chiamando </line>
+                <line xml:id="z180rline09">i soldati alla banca à pigliare danari, havendo detto al
+                    Capitano </line>
+                <line xml:id="z180rline10">Giovanni da Colle, che egli, stando egli seco, gli poteva
+                    comandare, </line>
+                <line xml:id="z180rline11">fù da lui, messa la mano alla spada, per la gola mentito,
+                    e à gran </line>
+                <line xml:id="z180rline12">pena, abbassategli da piu Colligiani soldati, e amici di
+                    Giovanni </line>
+                <line xml:id="z180rline13">l’alabarde in contra, si potè ritirare, e salvarsi, onde
+                    egli poco </line>
+                <line xml:id="z180rline14">appresso menati cinque de’ suoi Archibusieri con seco, e
+                    preso Gio- </line>
+                <line xml:id="z180rline15">vanni per lo petto, e dimandatolo, se havea ben fatto à
+                    mentirlo </line>
+                <line xml:id="z180rline16">per la gola, e havendogli Giovanni risposto: io non istò
+                    teco, </line>
+                <line xml:id="z180rline17">e quello, che ho detto, è ben detto, in presenza del
+                    Capitano Gio- </line>
+                <line xml:id="z180rline18">vambatista Borghesi <del hand="#varchi">da
+                        Siena</del><add place="above" hand="#varchi">nobile sanese</add>, ammazzare
+                    lo fece. Per la qual </line>
+                <line xml:id="z180rline19">cosa levatosi il campo à romore, egli chiesto, e non
+                    potendo cosi </line>
+                <line xml:id="z180rline20">tostamente havere un cavallo, si diede, temendo del
+                    Commes- </line>
+                <line xml:id="z180rline21">sario, à fuggire à piedi, seguitandolo non dimeno molti
+                    de' suoi </line>
+                <line xml:id="z180rline22">soldati, ancora che egli ò da vero, ò fintamente gli
+                    scacciasse, </line>
+                <line xml:id="z180rline23">e dicesse, che al sergente maggiore ubbidire dovessono,
+                    tanto che </line>
+                <line xml:id="z180rline24">al fine salito à cavallo se n’andava solo: ma il
+                    Commessario </line>
+                <line xml:id="z180rline25">sentito il romore, e intesone la cagione, ed il signore
+                    Horazio me- </line>
+            </zone>
+            <zone xml:id="z180v" n="382">
+                <add place="margin left top">382</add>
+                <line xml:id="z180vline01">desimamente con molti soldati si misero à corrergli
+                    dietro, e lo giun- </line>
+                <line xml:id="z180vline02">sero à punto, mentre che egli, uscito della strada
+                    maestra, attra- </line>
+                <line xml:id="z180vline03">versava una montagna gia sei miglia lontano dal campo:
+                    per </line>
+                <line xml:id="z180vline04">che egli, smontato da cavallo, e abbassata la picca, mai
+                    arrende- </line>
+                <line xml:id="z180vline05">re ne per preghi, ne per minaccie non si volle, infino,
+                    che il si- </line>
+                <line xml:id="z180vline06">gnore Horazio gli disse: renditi à me, e non dubitare;
+                    pensando </line>
+                <line xml:id="z180vline07">per avventura, che egli, di cui era amicissimo, e
+                    massimamente ha- </line>
+                <line xml:id="z180vline08">vendogli detto quelle parole, scampare senza fallo il
+                    dovesse. Hora- </line>
+                <line xml:id="z180vline09">zio dandogli buona speranza, e largamente di doverlo
+                    aiutare </line>
+                <line xml:id="z180vline10">promettendogli, non volle porlo nelle mani, e podestà del
+                    commessa- </line>
+                <line xml:id="z180vline11">rio, ma lo mandò, scrivendone e raccomandandolo al signor
+                    Malatesta </line>
+                <line xml:id="z180vline12">suo Fratello, in Ispelle. Questo caso scrisse subitamente
+                    il Com- </line>
+                <line xml:id="z180vline13">messario Giovambatista à’ signori Dieci, e benche da se
+                    non fusse leg- </line>
+                <line xml:id="z180vline14">giero, l’andò egli aggravando molto, dicendo lui haver
+                    sollevato </line>
+                <line xml:id="z180vline15">le compagnie à dovere ire à chiedere la paga innanzi, che
+                    si partis- </line>
+                <line xml:id="z180vline16">sero, haver fatto dare ne’ tamburi, et in somma haver
+                    tentato </line>
+                <line xml:id="z180vline17">d’ammottinarsi, e menar via la sua banda. La onde i Dieci
+                    man- </line>
+                <line xml:id="z180vline18">darono in contanente ser Giovanni Naldini in poste à
+                    Perugia, </line>
+                <line xml:id="z180vline19">sì perche egli, trasferendosi di quindi al campo,
+                    sollecitasse le </line>
+                <line xml:id="z180vline20">Genti al partire, e sì perche si facesse consegnare
+                    Pandolfo, e con </line>
+                <line xml:id="z180vline21">buona guardia cautamente lo conducesse in Firenze: ma
+                    trova- </line>
+                <line xml:id="z180vline22">to il Naldino, che le genti s’erano il di dinanzi, che
+                    egli arrivas- </line>
+                <line xml:id="z180vline23">se, cioè à’ sei giorni di Marzo, verso l’Aquila partite,
+                    hebbe </line>
+                <line xml:id="z180vline24">delle fatiche à poter disporre Malatesta, che volesse
+                    consegnargli </line>
+                <line xml:id="z180vline25">il Pregione, dicendogli, che haveva bene commessione da
+                    Horazio </line>
+            </zone>
+            <zone xml:id="z181r" n="383">
+                <add place="margin right top">181</add>
+                <add place="margin right top">383</add>
+                <line xml:id="z181rline01">di doverlo consegnare, ma che oltra l’altre ragioni, il
+                    Duca d’Ur- </line>
+                <line xml:id="z181rline02">bino gle le haveva infinitamente raccomandato, e così
+                    hora una </line>
+                <line xml:id="z181rline03">scusa, et hora un’altra trovando, tirava la cosa in
+                    lungo: pure </line>
+                <line xml:id="z181rline04">alla perfine ser Cristofano Cancelliere del signore
+                    Horazio, e ser Gio- </line>
+                <line xml:id="z181rline05">vanni con volontà di Malatesta, il quale molto si
+                    mostrava non </line>
+                <line xml:id="z181rline06">pure affezionato, ma eziandio per la condotta del
+                    Fratello obli- </line>
+                <line xml:id="z181rline07">gato à’ signori Fiorentini: et uccellava in parte ad
+                    esser con- </line>
+                <line xml:id="z181rline08">dotto anch’egli, menarono il Puccino da Spelle pregione
+                    in Cor- </line>
+                <line xml:id="z181rline09">tona, et à Giovanni Uguccioni, il quale v’era Capitano,
+                    il con- </line>
+                <line xml:id="z181rline10">segnarono; ed egli nella Roccha diligentemente guardare
+                    il facea. </line>
+                <line xml:id="z181rline11">La qual cosa intesa da’ Dieci scrissero à Ser Giovanni,
+                    che comu- </line>
+                <line xml:id="z181rline12">nicando ogni cosa col Capitano, lo facessero con tortura,
+                    e senza </line>
+                <line xml:id="z181rline13">veruno rispetto sopra sei capi, che essi gli mandarono,
+                    disaminare; </line>
+                <line xml:id="z181rline14">I sei capi in sostanza furono questi: </line>
+                <line xml:id="z181rline15">Primo: Se havea tenuto mai pratica con gl' Imperiali. </line>
+                <line xml:id="z181rline16">Secondo: Se havea mai mandato ambasciata, ò ricevuta dal
+                    Papa, </line>
+                <line xml:id="z181rline17">ò da Altri per lui. </line>
+                <line xml:id="z181rline18">Terzo: Che cagione mosso l’havea ad ammazzare Giovanni </line>
+                <line xml:id="z181rline19">da Colle, e se prima di cosa alcuna ricercato l’havea. </line>
+                <line xml:id="z181rline20">Quarto: Che ragionamenti havea havuto con gli hostaggi,
+                    quando </line>
+                <line xml:id="z181rline21">gli raccettò à Narni. </line>
+                <line xml:id="z181rline22">Quinto: Perche dopo le parole havute dal Commessario,
+                    condusse </line>
+                <line xml:id="z181rline23">gl' altri Capitani à lamentarsi col <choice>
+                        <abbr>sre</abbr>
+                        <expan>signore</expan>
+                    </choice> Horazio, dicendo, che </line>
+                <line xml:id="z181rline24">se andavano nel regno, non potrebbeno haver danari, </line>
+                <line xml:id="z181rline25">e che gli menarebbe in luogo, dove né sarebbeno loro da-
+                </line></zone>
+            <zone xml:id="z181v" n="384">
+                <add place="margin left top" hand="#baldini">XV</add>
+                <add place="margin left top">384</add>
+                <line xml:id="z181vline01">ti; e perche havea detto, che non si dando danari, se
+                    n’an- </line>
+                <line xml:id="z181vline02">drebbe con mille fanti. </line>
+                <line xml:id="z181vline03">Sesto, e ultimo: perche morto che hebbe Giovanni, fece
+                    dare nel tam- </line>
+                <line xml:id="z181vline04">buro, menando via la compagnia. </line>
+                <line xml:id="z181vline05">Sopra i quali capitoli diligentemente da ser Giovanni, e
+                    dal Notaio </line>
+                <line xml:id="z181vline06">del capitano esaminato non gia con tortura, come era la
+                    com- </line>
+                <line xml:id="z181vline07">messione, ma solamente à parole; perché Giovanni
+                    Uguccioni, </line>
+                <line xml:id="z181vline08">qualunche cagione sel movesse, non volle, che egli fusse
+                    collato, ne- </line>
+                <line xml:id="z181vline09">gò gagliardissimamente, e, per quanto potemo conoscere
+                    Noi dalla </line>
+                <line xml:id="z181vline10">esamina, e da altre scritture, oltra due lettere, che
+                    havemo scritte </line>
+                <line xml:id="z181vline11">da Spelle à’ Signori Dieci, e sottoscritte di sua mano
+                    propria, con </line>
+                <line xml:id="z181vline12">verità ogni cosa, salvo, che d' havere ricevuti, et
+                    honorati gli Sta- </line>
+                <line xml:id="z181vline13">tichi, havendolo non dimeno fatto intendere in contanente
+                    à Loren- </line>
+                <line xml:id="z181vline14">zo Martelli allora commessario, e non havendo con esso
+                    loro </line>
+                <line xml:id="z181vline15">ragionamento alcuno havuto, che pregiudicare in verun
+                    modo gli </line>
+                <line xml:id="z181vline16">potesse; e d’havere fatto ammazzare Giovanni, il quale
+                    errore </line>
+                <line xml:id="z181vline17">solo pregava humilissimamenteˎ perche non si potrebbe
+                    credere con </line>
+                <line xml:id="z181vline18">quanta humiltà, e paura favellava, che perdonato gli
+                    fusse, ag- </line>
+                <line xml:id="z181vline19">giugnendo, se è errore; concio sia cosa che egli,
+                    trovandosi mentito, </line>
+                <line xml:id="z181vline20">diceva, secondo l’abusione, e falsa credenza de’ soldati
+                    hodierni, </line>
+                <line xml:id="z181vline21">che non poteva, salvo il suo honore, non ammazzarlo.
+                    Havuta i </line>
+                <line xml:id="z181vline22">Dieci cotale esamina, scrissero à Ser Giovanni, che
+                    facendogli </line>
+                <line xml:id="z181vline23">mettere le manette, e dandogli cattiva bestia, il
+                    conducessi con </line>
+                <line xml:id="z181vline24">guardia di cinquanta fanti, e più, se più
+                        abbisognasseno,<add place="below">^</add>
+                    <add place="margin left" hand="#baldini">À Firenze <lb/>^</add><metamark
+                        rend="underlined" spanTo="#z181vline25w01"/>nella </line>
+                <line xml:id="z181vline25">casa del Capitano d'Arezzo, dove co’ piè ne' ceppi lo <w
+                        xml:id="z181vline25w01">tenesse:</w></line>
+                <add place="margin right lower" hand="#bonsi">e di quivi ma-</add>
+            </zone>
+            <zone xml:id="z182r">
+                <add place="margin right top">182</add>
+                <handShift new="#serra"/>
+                <line xml:id="z182rline01" rend="centered">ORAZIONE DI NICCOLÒ CAPPONI, FATTA </line>
+                <line xml:id="z182rline02" rend="centered">NEL CONSIGLIO MAGGIORE IN RINGRA- </line>
+                <line xml:id="z182rline03" rend="centered">ZIARE E CONFORTARE IL POPOLO </line>
+                <line xml:id="z182rline04" rend="centered">QUANDO FU CREATO </line>
+                <line xml:id="z182rline05" rend="centered">GONFALO </line>
+                <line xml:id="z182rline06" rend="centered">NIE </line>
+                <line xml:id="z182rline07" rend="centered">RE </line>
+                <line xml:id="z182rline08">Si come noi tutti insieme, e ciascun di noi separatamente
+                    debbe inclito, e gene- </line>
+                <line xml:id="z182rline09">roso Popolo Fiorentino non da alcuno suo ò merito, ò
+                    valore; ma solo dalla bontà, e </line>
+                <line xml:id="z182rline10">benignità di Dio, ottimo e grandissimo il benifizio
+                    riconoscere della libertà, da  </line>
+                <line xml:id="z182rline11">Noi, quando meno l'aspettavamo, ricuperata: così io non
+                    da alcuno mio ò valore </line>
+                <line xml:id="z182rline12">ò merito; ma solo dalla benignità, e bontà di tutti Voi
+                    insieme, e ciascuno di Voi </line>
+                <line xml:id="z182rline13">separatamente il benifizio riconoscere di questo
+                    supremo, et honoratissimo grado, </line>
+                <line xml:id="z182rline14">al quale voi nobilissimi e prestantissimi Cittadini non
+                    vo' dire contra la voglia; ma </line>
+                <line xml:id="z182rline15">bene fuori dell'oppennione, e credenza mia innalzato, et
+                    esaltato m’avete. La on- </line>
+                <line xml:id="z182rline16">de, quanto io piu mi vi conosco, e confesso ubbligato:
+                    tanto doverrei ancora haverve- </line>
+                <line xml:id="z182rline17">ne non solamente miglior grado, il che io
+                    fo, e farò sempre: ma eziandio renderve- </line>
+                <line xml:id="z182rline18">ne grazie maggiori: la qual cosa io non penso nè di poter
+                    fare per la grandezza </line>
+                <line xml:id="z182rline19">del benifizio vostro; nè di dovere per la picciolezza
+                    dell'ingegno mio. Ben vi dico in </line>
+                <line xml:id="z182rline20">luogo di ringraziarvi con parole, che io mi sforzerò
+                    sempre con tutto l'animo di far </line>
+                <line xml:id="z182rline21">sì coll' oppere ˎaiutantemi la divina grazia, che né voi
+                    mai debbiate pentirmi d’ha- </line>
+                <line xml:id="z182rline22">vermi spontaneamente cotale dignità conceduta; nè io
+                    d'haverla dopo lunga con- </line>
+                <line xml:id="z182rline23">sultazione; piu nel vostro giudizio confidandomi, che nel
+                    mio, non per desiderio di </line>
+                <line xml:id="z182rline24">comandare; ma per tema di non disubbidire,
+                    accettata. E perchè ciascheduno di  </line>
+                <line xml:id="z182rline25">voi possa nobilissimi, e prestantissimi Cittadini e
+                    supplire dove io mancassi: e cor- </line>
+                <line xml:id="z182rline26">reggermi dove io errassi; piacciavi non solo udire,
+                    ma considerare qual sia d'in- </line>
+                <line xml:id="z182rline27">torno al governo di questa nostra fioritissima
+                    hoggi, e felicissima Repubblica il </line>
+                <line xml:id="z182rline28">parere, e consiglio mio, il quale io dirò liberamente, et
+                    apertamente, se non con </line>
+                <line xml:id="z182rline29">prudenza, e con eloquenza, certo con verità, e con
+                    carità. Dico addunque nobilis- </line>
+                <line xml:id="z182rline30">simi, e prestantissimi cittadini che come i corpi nostri,
+                    così gli stati possono, anzi </line>
+                <line xml:id="z182rline31">sogliono infermare, et infermati la lor vita terminare in
+                    due modi, cioè ò per </line>
+                <line xml:id="z182rline32">cagione intrinseca, ò per cagione estrinseca. La cagione
+                    intrinseca è ne' corpi </line>
+                <line xml:id="z182rline33">la distemperanza degli humori; e ne gli stati la
+                    discordia de’ Cittadini. La ca- </line>
+                <line xml:id="z182rline34">gione estrinseica è ne gli uni, e gli altri quella
+                    forza, e violenza, la quale </line>
+                <line xml:id="z182rline35">ò con ferro, ò con altre nocevoli cose può esser loro
+                    fatta di fuori. Ora che que- </line>
+                <line xml:id="z182rline36">sta Repubblica sia inferma dentro; ed habbia fuori chi
+                    cerchi d’offenderla; </line>
+                <line xml:id="z182rline37">non può Alcuno di Noi dubitare. Dee bene ciascuno di noi,
+                    nobilissimi, e prestan- </line>
+                <line xml:id="z182rline38">tissimi cittadini, e massimamente, coloro che sono ne’
+                    Magistrati ˎcome Medici </line>
+                <line xml:id="z182rline39">più vicini, e più obbligati all'infermo, fare ogni cosa
+                    per rimediare à l' un ma- </line>
+                <line xml:id="z182rline40">le, et all'altro. Il che si può agevolissimamente in un
+                    tempo medesimoˎ chi ben </line>
+                <line xml:id="z182rline41">considera , e con un rimedio solo conseguire. E questa è
+                    la </line>
+                <line xml:id="z182rline42">concordia sola: sola la concordia havemo
+                    nobilissimi, e prestantissimi Cittadini agevolissimo, et unico ri- </line>
+            </zone>
+            <zone xml:id="z182v">
+                <line xml:id="z182vline01">medio ad amenduni questi così gravi morbi e cosi
+                    pericolosi; con cio sia cosa chè </line>
+                <line xml:id="z182vline02">mentre staremo d'accordo tra Noi, et havremo un fine
+                    medesimo tutti quanti; </line>
+                <line xml:id="z182vline03">poco, anzi nulla ci potranno nuocere ò le magagne di
+                    dentro, ò le violenze di  </line>
+                <line xml:id="z182vline04">fuori. Ma se saremo discordanti; e ciascuno penserà piu
+                    al proprio, e parti- </line>
+                <line xml:id="z182vline05">colare, che al comune, e pubblico bene, la libertà nostra
+                    è spacciata. Come egli </line>
+                <line xml:id="z182vline06">non si trova cosa nessuna ne sì grande, ne tanto
+                    gagliarda, la quale la </line>
+                <line xml:id="z182vline07">discordia non diminuisca, et annulli: così nessuna se ne
+                    ritruova nè tanto </line>
+                <line xml:id="z182vline08">picciola, nè si debole, la quale la concordia non
+                    accresca, e conservi. Tutte </line>
+                <line xml:id="z182vline09">le cose, che sono, e che possono essere, sono
+                    nell'universo, e tutte sono tra loro </line>
+                <line xml:id="z182vline10">ò contrarie, ò dissomiglianti: e nondimeno la concordia
+                    tenendole collega- </line>
+                <line xml:id="z182vline11">te, et unite insieme fa di loro quasi infinite, parte
+                    generabili, e corrottibi- </line>
+                <line xml:id="z182vline12">li, e parte ingenerabili, et incorrottibili con
+                    maraviglioso, et indissolubile </line>
+                <line xml:id="z182vline13">vinculo un conserto, et un composto il piu bello, et il
+                    piu perfetto non dico </line>
+                <line xml:id="z182vline14">che sia, ma che esser possa. Volete voi honoratissimi, et
+                    honorandissimi Cit- </line>
+                <line xml:id="z182vline15">tadini miei, esser liberi? Siate concordi. Disiderate Voi
+                    che questa Re- </line>
+                <line xml:id="z182vline16">pubblica vostra viva lungo tempo, e felice? Vivete uniti.
+                    Havete Voi ca- </line>
+                <line xml:id="z182vline17">ro di vincere i Nemici vostri, ò che i vostri Nemici non
+                    vincano Voi ? Vince- </line>
+                <line xml:id="z182vline18">te Voi medesimi: ponete giù l'ire: lasciate ire gli
+                    sdegni: mettete da par- </line>
+                <line xml:id="z182vline19">te i rancori: se bramate che gl’Avversarij vostri non
+                    habbiano se non cagio- </line>
+                <line xml:id="z182vline20">ne, occasione d'opprimervi: sdimentichinsi da Voi con
+                    antico essempio degli </line>
+                <line xml:id="z182vline21">Ateniesi , ma con maggiore osservanza, che altra volta
+                    non si fece in questa </line>
+                <line xml:id="z182vline22">città, tutte le ingiurie. Facciasi conto che delle cose
+                    passate non ne sia sta- </line>
+                <line xml:id="z182vline23">ta nessuna. Accomunisi finalmente quello, ch'è d' ognuno
+                    à ciascheduno. </line>
+                <line xml:id="z182vline24">À le quali cose fare io, nobilissimi, e prestantissimi
+                    cittadini e vi </line>
+                <line xml:id="z182vline25">conforto con tutta quella autorità, e maggioranza, che
+                    Voi stessi da Voi medesimi con- </line>
+                <line xml:id="z182vline26">ceduta m’havete: e vi prego per quello ardore, e carità,
+                    che deono tutti  </line>
+                <line xml:id="z182vline27">insieme, e ciascuno di per se i buoni Cittadini, à le
+                    patrie loro. E se à me, </line>
+                <line xml:id="z182vline28">nel quale Voi havete mostrato di confidar tanto, alcuna
+                    cosa credete; cre- </line>
+                <line xml:id="z182vline29">detemi questa: che tanto tempo manterremo libera questa
+                    Città, e non pun- </line>
+                <line xml:id="z182vline30">to piu: quanto e dalle forze, e dall'insidie di colui ,
+                    il quale la libertà no- </line>
+                <line xml:id="z182vline31">stra tirranicamente usurpato, et occupato c’havea, la
+                    saperremo guarda- </line>
+                <line xml:id="z182vline32">re, e difendere: la qual cosa come fia di molta virtù,
+                    così non sarà di poca </line>
+                <line xml:id="z182vline33">fortuna. Nè c’assicuri nobilissimi, e prestantissimi
+                    Cittadini che egli cercon- </line>
+                <line xml:id="z182vline34">dato hora, e racchiuso da tre ferocissimi, e potentissimi
+                    eserciti viva poco </line>
+                <line xml:id="z182vline35">meno che pregione in Castel Santagnolo.
+                    Perccioche l'autorità, e la riveren- </line>
+                <line xml:id="z182vline36">za della Sedia Appostolica è grandissima; e l'
+                    ambizione, et avarizia de' </line>
+                <add place="margin right lower">Pren-</add>
+            </zone>
+            <zone xml:id="z183r">
+                <add place="margin right top">183</add>
+                <line xml:id="z183rline01">Prencipi non picciola, ma infinita. ed egli
+                    sempre penserà più come possa </line>
+                <line xml:id="z183rline02">sottomettere Firenze; che come debba liberar Roma. E la
+                    via da guardar- </line>
+                <line xml:id="z183rline03">si, e difendersi dall' insidie, e forze sue non è altra
+                    ˎcome io ho detto gia tan- </line>
+                <line xml:id="z183rline04">te volte, che lo stare uniti, et andarlo piu tosto
+                    intertenendo, e piaggian- </line>
+                <line xml:id="z183rline05">do, come Papa Clemente, che spregiando, et irritando,
+                    come Giulio de' Me- </line>
+                <line xml:id="z183rline06">dici. Non le parole, che si dicono ò ignominiosamente, ò
+                    ingiuriosamente con- </line>
+                <line xml:id="z183rline07">tro i Nemici: ma l'opere, che si fanno ò prudentemente, ò
+                    valorosamente </line>
+                <line xml:id="z183rline08">sono quelle, che alla fine danno ò vinta, ò perduta la
+                    vittoria. Quanto à </line>
+                <line xml:id="z183rline09">quello, che al debito, et ufizio mio s' appartiene; io
+                    nobilissimi, e prestantis- </line>
+                <line xml:id="z183rline10">simi Cittadini, quando bene mille volte potessi;
+                    non però debbo promettervi  </line>
+                <line xml:id="z183rline11">altro di me, se non sommo amore , somma fede, e somma
+                    diligenza: e quella </line>
+                <line xml:id="z183rline12">medesima prontezza d'animo , la quale hebbe Piero mio
+                    Padre, e tanti Al- </line>
+                <line xml:id="z183rline13">tri miei Maggiori nelle bisogne, e per la
+                    salute di quest' inclita, ed eccel- </line>
+                <line xml:id="z183rline14">sa Repubblica nostra. E poichè v’è piaciuto di volervi
+                    riposare, e dormire </line>
+                <line xml:id="z183rline15">in un certo modo co gli occhij miei; starò vigilantissimo
+                    il giorno, e la notte:  </line>
+                <line xml:id="z183rline16">e con tutte le forze m’ingegnerò sempre
+                    ˎprestandomi favore la maestà  </line>
+                <line xml:id="z183rline17">dell'Altissimo, prima di riunire, e poscia di mantenereˎ
+                    per quanto sarà  </line>
+                <line xml:id="z183rline18">in me, vivo, e sano questo corpo: guardandolo,
+                    e difendendolo da tutti que’ </line>
+                <line xml:id="z183rline19">casi, et accidenti, i quali potessino in alcun modo cosi
+                    dal didentro, come </line>
+                <line xml:id="z183rline20">dal difuori ò torgli la vita, ò dargli la morte. </line>
+                <line xml:id="z183rline21">Questo parlare del Gonfaloniere, tutto che fusse non meno
+                    vero, che pruden- </line>
+                <line xml:id="z183rline22">te: fu ricevuto diversamente; e fece insospettire Molti,
+                    i quali essendo </line>
+                <line xml:id="z183rline23">stati ò ingiuriati, ò tenuti sotto dall'altro stato,
+                    harebbono volutoˎ non con- </line>
+                <line xml:id="z183rline24">siderando per avventura quanto il piu delle volte riesce
+                    amara la dol- </line>
+                <line xml:id="z183rline25">cezza della vendetta, sfogarsi e contra i Palleschi co’
+                    fatti, e contra Cle- </line>
+                <line xml:id="z183rline26">mente con parole. </line>
+            </zone>
+            <zone xml:id="z183v"> </zone>
+            <zone xml:id="z184r" n="385">
+                <handShift new="#bonsi"/>
+                <add place="margin right top">184</add>
+                <add place="margin right top">385</add>
+                <add place="margin right top" hand="#bonsi">0/16</add>
+                <line xml:id="z184rline01"><metamark rend="underlined" spanTo="#z184rline04w01"/>e
+                    di quivi mandatovi il Bargello, e quattro famigli d'Otto oltra </line>
+                <line xml:id="z184rline02">la guardia de' cinquanta fanti lo fecero i Dieci condurre
+                    al Vi- </line>
+                <line xml:id="z184rline03">cario di San Giovanni, il quale era Giorgio Rinieri, e
+                    l'altro giorno, </line>
+                <line xml:id="z184rline04">che fu il diciottesimo di Marzo, in <w
+                        xml:id="z184rline04w01">Firenze,</w> dove agli ventiquattro <add
+                        place="margin right" hand="#baldini">di Marzo</add></line>
+                <line xml:id="z184rline05">si trasse la Quarantia, dalla quale, pontandogli addosso
+                    i parenti, </line>
+                <line xml:id="z184rline06">e gl' Amici di Giovambatista, il quale mostrava volere,
+                    se Pan- </line>
+                <line xml:id="z184rline07">dolfo gastigato non fusse, rinunziare la Commesseria,
+                    dopo molte, </line>
+                <line xml:id="z184rline08">e varie sentenze fu condannato nella testa, dalla qual
+                    sentenza </line>
+                <line xml:id="z184rline09">egli al consiglio grande appellò, e agli sedici d’Aprile
+                    fattosi con- </line>
+                <line xml:id="z184rline10">durre nel senato, il quale quel giorno fù frequentissimo,
+                    con bel </line>
+                <line xml:id="z184rline11">porgere, per soldato, e con assai acconcia maniera
+                    favellò in que- </line>
+                <line xml:id="z184rline12">sta sentenza. Io dubito forte honorabili cittadini, e
+                    Nobilis- </line>
+                <line xml:id="z184rline13">simi signori miei Fiorentini, che quello, che io pensava,
+                    che mi do- </line>
+                <line xml:id="z184rline14">vesse non picciolo <del hand="#varchi"
+                        >guiderdone</del><add place="above" hand="#varchi">giovamento</add> recare,
+                    m’habbia grandissimamente </line>
+                <line xml:id="z184rline15">nociuto e ciò è lo havere ioˎper quanto le cose basse
+                    all’altissi- </line>
+                <line xml:id="z184rline16">me agguagliare si possono, disiderato sempre, e cercato
+                    di seguire, </line>
+                <line xml:id="z184rline17">e d' imitare non solo la grandezza, ma eziandio la
+                    magnificenza </line>
+                <line xml:id="z184rline18">del cortesissimo, et invicibile animo del <choice>
+                        <abbr>s or</abbr>
+                        <expan>signor</expan>
+                    </choice> Giovanni, del quale io </line>
+                <line xml:id="z184rline19">fui, ancora che forse indegnamente, servo e soldato. La
+                    onde te- </line>
+                <line xml:id="z184rline20">nendo io per cosa certa, che egli da quella altissima
+                    parte del Cielo, </line>
+                <line xml:id="z184rline21">nella quale l’anime de’ bellicosi huomini, et invitti
+                    heroi, ‘tra i qua- </line>
+                <line xml:id="z184rline22">li egli fu senza alcuna controversia il più bellicoso, ed
+                    il più invitto </line>
+                <line xml:id="z184rline23">ne’ tempi nostri, felicissima vita vivendo, eternamente
+                    dimorano, </line>
+                <line xml:id="z184rline24">quello, che a noi altri sotto la custodia, e disciplina
+                    sua allevati, et </line>
+                <line xml:id="z184rline25">ammaestrati, in questo basso mondo facessimo, alcuna
+                    volta riguar- </line></zone>
+            <zone xml:id="z184v" n="386">
+                <add place="margin left top">386</add>
+                <line xml:id="z184vline01">dasse; e sappiendo, che egli, per non venir meno à’
+                    soldati, e i suoi </line>
+                <line xml:id="z184vline02">gentilhuomini honoratamente trattenere, più volte delle
+                    sue posses- </line>
+                <line xml:id="z184vline03">sioni proprie alienò, e vendè, non solo gli stipendij
+                    delle Signorie </line>
+                <line xml:id="z184vline04">vostre largamente pagateimi, ma ancora lo stesso
+                    patrimonio mio </line>
+                <line xml:id="z184vline05">ho, per potere cortesia usare, e metter tavola à i miei
+                    soldati, parte </line>
+                <line xml:id="z184vline06">impegnato, e parte venduto. E quinci avvenne, che io per
+                    non de- </line>
+                <line xml:id="z184vline07">generare dalle lodevoli creanze di così buon maestro, e
+                    valoroso </line>
+                <line xml:id="z184vline08">Padrone, gli statichi, che stanchi, anzi fiacchi, e di
+                    tutte le cose </line>
+                <line xml:id="z184vline09">bisognosi à Narni di notte tempo arrivarono, non volli
+                    non ri- </line>
+                <line xml:id="z184vline10">cettare; e, quanto per me si potesse, essendo eglino non
+                    pur Fio- </line>
+                <line xml:id="z184vline11">rentini, ma nobilissimi Fiorentini, senza pregiudizio
+                    però delle </line>
+                <line xml:id="z184vline12">Signorie vostre, e della libertà di questa à me più che
+                    la propria </line>
+                <line xml:id="z184vline13">vita, carissima patria; honorare: E per la medesima
+                    cagione, cioè </line>
+                <line xml:id="z184vline14">per non mostrarmi in parte alcuna indegno di sì gran
+                    duce, e Si- </line>
+                <line xml:id="z184vline15">gnore, non molto di poi Giovanni da Colle, il quale
+                    contra ogni </line>
+                <line xml:id="z184vline16">ragione, e <add place="below">^</add>
+                    <add place="above">con</add> soperchieria per la gola mentito m’havea, non potei
+                    non </line>
+                <line xml:id="z184vline17">ammazzare per salvamento dell’honor mio, il quale più che
+                    tutte </line>
+                <line xml:id="z184vline18">l’altre cose, e maggiormente, che la vita stessa dagl'
+                    huomini di </line>
+                <line xml:id="z184vline19">guerra guardare, et haver caro senza alcun dubbio si
+                    deve: E </line>
+                <line xml:id="z184vline20">queste due cose sole senza più, di tutte quelle sopra le
+                    quali prima </line>
+                <line xml:id="z184vline21">nella Roccha di Cortona da messer Giovanni Naldini
+                    diligentis- </line>
+                <line xml:id="z184vline22">simamente à parole, e poi qui in Firenze per commessione
+                    de i </line>
+                <line xml:id="z184vline23">
+                    <choice>
+                        <abbr>Magn</abbr>
+                        <expan>Magnifici</expan>
+                    </choice> Signori Dieci con molti tormenti, e diversi martorij sono </line>
+                <line xml:id="z184vline24">stato piu volte disaminato, ho sinceramente, e con verità
+                    confes- </line>
+                <line xml:id="z184vline25">sato, e confesso. Dall’una delle quali molta lode, e
+                    dall’altra </line>
+            </zone>
+            <zone xml:id="z185r" n="387">
+                <add place="margin right top">185</add>
+                <add place="margin right top">387</add>
+                <line xml:id="z185rline01">niun biasimo <add rend="inline" hand="#bonsi">dover</add>
+                    potermi venire pensato m’havea: e per questa ca- </line>
+                <line xml:id="z185rline02">gione trovandomi io da tutte l’altre accusazioni postemi,
+                    ed in- </line>
+                <line xml:id="z185rline03">putazioni datemi lontanissimo, non desiderava cosa più
+                    ˎco- </line>
+                <line xml:id="z185rline04">me può il medesimo <choice>
+                        <abbr>m</abbr>
+                        <expan>messer</expan>
+                    </choice> Giovanni veramente testimoniare, che </line>
+                <line xml:id="z185rline05">di venire à Firenze, per potermi presenzialmente delle
+                    colpe appo- </line>
+                <line xml:id="z185rline06">stemi con i miei Signori giustificare: ma quando io mi
+                    vidi </line>
+                <line xml:id="z185rline07">à guisa che i ladroni, e i publici rubatori delle strade
+                    sogliono, così </line>
+                <line xml:id="z185rline08">strettamente legare, e con tante guardie, sopra
+                    tristissimo, e debole </line>
+                <line xml:id="z185rline09">ronzino legato condurre, cominciai à dubitare, non lo
+                    sdegno </line>
+                <line xml:id="z185rline10">contra me ingiustamente preso di Giovambatista
+                    Soderiniˎdel </line>
+                <line xml:id="z185rline11">quale non per altra cagione, che per honorarlo fò
+                    menzione, </line>
+                <line xml:id="z185rline12">e le false calunnie de i miei nemici piu potessero, e
+                    maggior forza ha- </line>
+                <line xml:id="z185rline13">vessono, che l’innocenza mia, e la verità stessa non
+                    facevano. </line>
+                <line xml:id="z185rline14">Del qual dubbio mi trasse poco appresso l’ohrribile, et
+                    inaspet- </line>
+                <line xml:id="z185rline15">tata sentenza così tostamente, e senza alcuno riserbo, e
+                    reden- </line>
+                <line xml:id="z185rline16">zione contra me data dal giudizio della Quarantia; et
+                    hora af- </line>
+                <line xml:id="z185rline17">fatto chiarito me n’ha la lettera del commessario, la
+                    quale do- </line>
+                <line xml:id="z185rline18">po la legge della quarantia, e il giudizio da lei contra
+                    me fatto </line>
+                <line xml:id="z185rline19">havete ad alta voce sentita leggere, e recitare: nella
+                    quale let- </line>
+                <line xml:id="z185rline20">tera cose si contengono, le quali io ˎsiamene tutta la
+                    corte ce- </line>
+                <line xml:id="z185rline21">lestiale verissimo testimone, non pur non feci, ma non
+                    pensai </line>
+                <line xml:id="z185rline22">mai. Ma lodato sia Dio, che per vostra prudenza, e virtù,
+                    e </line>
+                <line xml:id="z185rline23">secondo che io spero, e certamente desidero, per salvezza
+                    ancora, </line>
+                <line xml:id="z185rline24">et honore di me, non i pochi huomini della Quarantia, i
+                    quali </line>
+                <line xml:id="z185rline25">agevolmente si possono ò persuadere, ò corrompere, ma il
+                    libero </line>
+            </zone>
+            <zone xml:id="z185v" n="388">
+                <add place="margin left top">388</add>
+                <line xml:id="z185vline01">popolo di Firenze, e tutto questo sapientissimo Senato ha
+                    solo po-destà </line>
+                <line xml:id="z185vline02">e balía così nella morte, come nella vita de’ suoi
+                    cittadini. </line>
+                <line xml:id="z185vline03">E per qual cagione, ò à che fine hareste voi,
+                    Prestantissimi Citta- </line>
+                <line xml:id="z185vline04">dini, e Signori miei al giudizio della Quarantia
+                    l’appello dato, </line>
+                <line xml:id="z185vline05">se non, perche sappiendo, che egli e ingannare, et essere
+                    ingannato </line>
+                <line xml:id="z185vline06">poteva, volevate haver facoltà di correggere, et
+                    ammendare gl' </line>
+                <line xml:id="z185vline07">errori suoi? per benefizio del quale appello giustissimi,
+                    e pieto- </line>
+                <line xml:id="z185vline08">sissimi Cittadini, e Signori miei, alle benignissime
+                    cortesie vostre </line>
+                <line xml:id="z185vline09">ricorso, e non potendo <add place="below" hand="#varchi"
+                        >˄</add>
+                    <add place="above" hand="#varchi">io</add> per le molte, e gravi catene, nelle
+                    quali stretto, </line>
+                <line xml:id="z185vline10">e così miserabilmente avvolto, e inviluppato mi vedete,
+                    ne alza- </line>
+                <line xml:id="z185vline11">re le mani à Dioˎcome dovrei, ne fare à voi croce delle
+                    braccia, </line>
+                <line xml:id="z185vline12">come vorrei, in quella vece gl' occhij al cielo alzando,
+                    e del quore </line>
+                <line xml:id="z185vline13">croce faccendovi, vi prego humilissimamente per tutto
+                    l’amore, il </line>
+                <line xml:id="z185vline14">quale dopo Dio alle mogli, e <add place="below"
+                        hand="#varchi">˄</add>
+                    <add place="above" hand="#varchi">à</add> figliuoli vostri, anzi per quello, che </line>
+                <line xml:id="z185vline15">alla libertà di questa Fiorentissima Repubblica portate,
+                    la quale </line>
+                <line xml:id="z185vline16">molto più, che i Figliuoli vostri, e le proprie mogli
+                    cara tenete, che </line>
+                <line xml:id="z185vline17">vi piaccia, attesa la picciolezza mia, e la grandezza di
+                    coloro con- </line>
+                <line xml:id="z185vline18">siderata, i quali per la molta nobiltà, e soverchia
+                    potenza loro, </line>
+                <line xml:id="z185vline19">ò torto, ò diritto non curando, acerbissimamente, e di
+                    nascoso, e </line>
+                <line xml:id="z185vline20">in palese m’oppugnano, di voler havere compassione, e
+                    misericordia </line>
+                <line xml:id="z185vline21">di me; il quale ˎqualunche io mi sia, non pure di voi
+                    nacqui, e </line>
+                <line xml:id="z185vline22">tra voi crebbi, ma da voi ancora ampiamente <del
+                        hand="#varchi">operato</del><add place="above" hand="#varchi"
+                    >honorato</add>, e liberal- </line>
+                <line xml:id="z185vline23">mente guiderdonato, ho piu volte la vita posto, e sparso
+                    il sangue </line>
+                <line xml:id="z185vline24">per voi, e per conservazione di questa Republica
+                    felicissima: </line>
+                <line xml:id="z185vline25">alla quale io fui sempre, e sempre sarò fedelissimo
+                    servo, e ubbidi- </line>
+            </zone>
+            <zone xml:id="z186r" n="389">
+                <add place="margin right top">186</add>
+                <add place="margin right top">389</add>
+                <line xml:id="z186rline01">entissimo Figliuolo. Considerate, vi prego,
+                    amorevolissimi Padri, e Si- </line>
+                <line xml:id="z186rline02">gnori miei, le qualità de i tempi, che corrono, e quali
+                    nemici hab- </line>
+                <line xml:id="z186rline03">bia questa città; e vi sovvenga non i soldati
+                    mercennarij, quantun- </line>
+                <line xml:id="z186rline04">che molti, e grossamente pagati, ma la milizia de i
+                    cittadini proprij </line>
+                <line xml:id="z186rline05">essere quella, che può lungamente mantenere vive, e
+                    felicemente con- </line>
+                <line xml:id="z186rline06">servare libere le Republiche, essendo questa tanto
+                    fedele, e ubbidiente, </line>
+                <line xml:id="z186rline07">quanto quegli disubbidienti, et infedeli: e se pure
+                    severamente, e con </line>
+                <line xml:id="z186rline08">rigorosità procedendo, voleste, ò per punire l’error mio,
+                    se così vi </line>
+                <line xml:id="z186rline09">paresse, che non negarò, che l’ira, ancor, che giusta in
+                    ammazzando </line>
+                <line xml:id="z186rline10">Giovanni da Colle non mi trasportasse al quanto, ò per
+                    soddisfare </line>
+                <line xml:id="z186rline11">in parte, e compiacere all’altrui voglie, quantunque
+                    ingiuste, </line>
+                <line xml:id="z186rline12">darmi alcun gastigo, non havete voi, oltra l'altre
+                        pregioni<add place="above" hand="#varchi">del Bargello</add>, , le stin- </line>
+                <line xml:id="z186rline13">che publiche? non il fondo della torre di Volterra? non
+                    la Roccha </line>
+                <line xml:id="z186rline14">della cittadella di Pisa? non quella della fortezza di
+                    Livorno? </line>
+                <line xml:id="z186rline15">non finalmente la galea ò à tempo, ò per sempre? perche
+                        qua<add place="inline">n</add>to </line>
+                <line xml:id="z186rline16">à me, ciascuna di queste pene, ancora che gravissime,
+                    meno m’ </line>
+                <line xml:id="z186rline17">offenderà, che se di questa dolcissima mia, e libera<del
+                        hand="#varchi">lissima</del><add place="above" hand="#varchi">issima</add>
+                    Patria </line>
+                <line xml:id="z186rline18">mi confinaste, ò bandiste. E chi sà Cittadini, e signori
+                    miei hu- </line>
+                <line xml:id="z186rline19">manissimi, che voi altramente facendoˎil che a Dio non
+                    piac- </line>
+                <line xml:id="z186rline20">cia, pentirvene quando che sia non dobbiate? <metamark
+                        rend="underlined">ò</metamark><add place="margin right" hand="#bonsi"
+                        >chi</add>può indovina- </line>
+                <line xml:id="z186rline21">re, che un giorno à questa cittàˎdel che medesimamente la
+                    guardi Dio, </line>
+                <line xml:id="z186rline22">cotali bisogni non sopravvengano, che ella, la persona, e
+                    fedele </line>
+                <line xml:id="z186rline23">opera di me suo cittadino, e servo ricercando, in vano
+                    non si doglia di </line>
+                <line xml:id="z186rline24">non havermi? Moltissime sono popolo mio quelle cose, le
+                    quali </line></zone>
+            <zone xml:id="z186v" n="390">
+                <add place="margin left top">390</add>
+                <line xml:id="z186vline01">fuora dell’opinione, e contra l’altrui volontà tutto il
+                    giorno acca- </line>
+                <line xml:id="z186vline02">dere e possono, e sogliono. E se ad Alcuno paresse, che
+                    io ˎcome i </line>
+                <line xml:id="z186vline03">Vili, e Pusillanimi fanno, ò troppo tenessi cara la vita,
+                    ò maggior </line>
+                <line xml:id="z186vline04">paura havessi della morte, che ad huomo Guerriero non si
+                    convie- </line>
+                <line xml:id="z186vline05">ne, sappia ˎsenza che il morire è da ciascheduno
+                        naturalme<add place="inline">n</add>te sopra </line>
+                <line xml:id="z186vline06">tutte le cose abborrito, non la morte, ma la maniera
+                    della morte </line>
+                <line xml:id="z186vline07">quella essere, che mi spaventa: dolendomi infinitame<add
+                        place="inline">n</add>te non il perire, ma il </line>
+                <line xml:id="z186vline08">perire per non giusta cagione, e come nemico di que- </line>
+                <line xml:id="z186vline09">sta mia, e da me cordialissimamente amata, dolcissima
+                    patria: la </line>
+                <line xml:id="z186vline10">qual cosa crederanno senza molta fatica tutti coloro, i
+                    quali sanno </line>
+                <line xml:id="z186vline11">quante volte io per cagion d’honore à manifesto pericolo
+                    della vita </line>
+                <line xml:id="z186vline12">messo volentieri, e spontaneamente posto mi sia: e quelle
+                    arme, </line>
+                <line xml:id="z186vline13">le quali nel cortile della chiesa della Madonna della
+                    Nunziata là </line>
+                <line xml:id="z186vline14">dalla porta di san Bastiano, ancora, benche tutte
+                    rugginose appic- </line>
+                <line xml:id="z186vline15">cate pendono, tolte per forza da me al nemico mio quasi
+                    due </line>
+                <line xml:id="z186vline16">volte in isteccato, prima à cavallo, e poi à piè
+                    valorosamente nella </line>
+                <line xml:id="z186vline17">presenza del mio Signore, e Maestro superato, e vinto,
+                    indubita- </line>
+                <line xml:id="z186vline18">ta fede à chiunche le mira, ne fanno: E se io in questo
+                    luogo da </line>
+                <line xml:id="z186vline19">quale, e qua<add place="inline">n</add>ta felicità, e<add
+                        place="inline above" hand="#varchi">in</add> quanta, e quale miseria piu per
+                    altruij </line>
+                <line xml:id="z186vline20">odio, che per mia colpa caduto, mi truovo,
+                    rammemorandomi, </line>
+                <line xml:id="z186vline21">ritenere le lagrime non sò, e impedito dalla frequenza
+                    de’ singhioz- </line>
+                <line xml:id="z186vline22">zi mandar fuora le parole non posso, non tanto la paura
+                    della </line>
+                <line xml:id="z186vline23">morte presente, quanto il timore della futura infamia; e
+                    di ciò </line>
+                <line xml:id="z186vline24">non men vera, che giusta cagione; Perche io di nuovo
+                    benignis- </line>
+            </zone>
+            <zone xml:id="z187r" n="391">
+                <add place="margin right top">187</add>
+                <add place="margin right top">391</add>
+                <line xml:id="z187rline01">[187r] simi Cittadini, e cortesissimi Signori miei
+                    Fiorentini colle ginoc- </line>
+                <line xml:id="z187rline02">chia della mente inchine, poi che con quelle del corpo
+                    conceduto </line>
+                <line xml:id="z187rline03">non m’è, quanto so, e posso il più, devotame<add
+                        place="inline">n</add>te vi prego </line>
+                <line xml:id="z187rline04">per tutte quelle cose, le quali più care vi sono, che
+                    togliendomi </line>
+                <line xml:id="z187rline05">per somma, et ineffabile benignità ,e cortesia vostra
+                    così acerba, </line>
+                <line xml:id="z187rline06">e immeritata morte, mi rendiate, non la vita, la quale
+                    piu </line>
+                <line xml:id="z187rline07">che ella si vaglia, stimare non si dee dagl' huomini
+                    valorosi, </line>
+                <line xml:id="z187rline08">ma si bene l’honore; del quale da niuno si può si gran
+                    conto te- </line>
+                <line xml:id="z187rline09">nere, che poco non sia. Resta ultimamente, che io, il
+                    quale non </line>
+                <line xml:id="z187rline10">nelle squole degl' oratori, ò de’ Filosofi tra lettere, e
+                    libri, ma negl' </line>
+                <line xml:id="z187rline11">eserciti, e ne i campi dell’arme tra trombe, e tamburi
+                    nutrito, </line>
+                <line xml:id="z187rline12">et allevato mi sono, non posso, vietato dalla legge, per
+                    proc- </line>
+                <line xml:id="z187rline13">curatore, che ciò far sappia, difendermi, e le mie
+                    ragioni, come </line>
+                <line xml:id="z187rline14">verame<add place="inline">n</add>te, così ornatame<add
+                        place="inline">n</add>te, e ordinatamente raccontare: ne mi </line>
+                <line xml:id="z187rline15">è lecito i parenti, e amici miei vestiti à bruno, e tutti
+                    rabbaruf- </line>
+                <line xml:id="z187rline16">fati, e afflitti, e spezialmente la mia miserissima, e
+                    infelicissima </line>
+                <line xml:id="z187rline17">Madre, che per me pieni <add place="below" hand="#varchi"
+                        >˄</add><add place="above" hand="#varchi">di lagrime e</add> d’amaritudine
+                        tacitame<add place="inline">n</add>te vi preghino, </line>
+                <line xml:id="z187rline18">e commuovano, in questo luogo condurre, mi volga
+                        humileme<add place="inline">n</add>
+                </line>
+                <line xml:id="z187rline19">te à nostro Signore Dio, e à tutti i suoi santi, e à te
+                    sopra gl' </line>
+                <line xml:id="z187rline20">Altri, beatissimo san Giovambatista, avvocato, e
+                    protettore di </line>
+                <line xml:id="z187rline21">questa nostra Città, il cui tempio di ritonda forma con
+                    antico, e </line>
+                <line xml:id="z187rline22">maraviglioso artificio edificato, e di molte ricchezze, e
+                    venerabi- </line>
+                <line xml:id="z187rline23">li reliquie adorno, gia à Marte, e poi con piu felice
+                    augurio da </line>
+                <line xml:id="z187rline24">i Cristianissimi Maggiori nostri alla tua santissima
+                    deità con- </line>
+            </zone>
+            <zone xml:id="z187v" n="392">
+                <add place="margin left top">392</add>
+                <line xml:id="z187vline01">sagrato, e da ciascuna Signoria divotame<add
+                        place="inline">n</add>te vicitato, e santame<add place="inline">n</add>te </line>
+                <line xml:id="z187vline02">honorato, e gli preghi con tutto il quore, che eglino, se
+                    io mai ho ò </line>
+                <line xml:id="z187vline03">con fatti, ò con pensieri contra questa innocentissima
+                    Republica </line>
+                <line xml:id="z187vline04">in alcun modo macchinato, mi facciano con gravissimo, e
+                    degno </line>
+                <line xml:id="z187vline05">supplizio le meritate pene portare: Ma se dall’altro lato
+                    io ne </line>
+                <line xml:id="z187vline06">feci mai, ne pensai se non quelle cose, che alla libertà,
+                    e grandez- </line>
+                <line xml:id="z187vline07">za di lei, mia dolcissima, e dilettissima Patria, essere
+                    utili, et hono- </line>
+                <line xml:id="z187vline08">revoli giudicai, mettano in quore à tutti, e à ciascuno
+                    di voi, po- </line>
+                <line xml:id="z187vline09">tentissimo, e misericordiosissimo popolo mio, che se non
+                    volete del tut- </line>
+                <line xml:id="z187vline10">to da ogni pena liberarmi, al meno à men grave supplizio,
+                    che </line>
+                <line xml:id="z187vline11">la morte non è, vi piaccia con sempiterna lode della
+                    Giustizia, </line>
+                <line xml:id="z187vline12">e pietà vostra, e immortal benifizio della salute, e
+                    degnità mia, </line>
+                <line xml:id="z187vline13">condennarmi. Detto che hebbe queste parole il Puccino,
+                    piangendo </line>
+                <line xml:id="z187vline14">forte, e singhiozzando tuttavia, le quali, benche lunghe,
+                    à lui parve- </line>
+                <line xml:id="z187vline15">ro brevissime, egli fu fuori dalla sala menato, et in
+                    andando, à ciascu<add place="inline">n</add>
+                </line>
+                <line xml:id="z187vline16">passo verso i cittadini pietosamente rivolgendosi, e à
+                    terra quanto più </line>
+                <line xml:id="z187vline17">poteva, col capo inchinandosi, gridava altamente: Popolo
+                    mio io mi </line>
+                <line xml:id="z187vline18">vi raccomando: habbiate compassione, e misericordia di
+                    me: Et è </line>
+                <line xml:id="z187vline19">certa cosa, che molti cittadini e mentre, che egli
+                    favellava, e quando </line>
+                <line xml:id="z187vline20">poi catenato se n’andava, visibilmente piangevano: il che
+                    non è me- </line>
+                <line xml:id="z187vline21">raviglia, essendo quello spettacolo e miserando per se, e
+                    nuovo in quel </line>
+                <line xml:id="z187vline22">consiglio. È bene meraviglia, che di quegli stessi, che
+                    piangevano, </line>
+                <line xml:id="z187vline23">non pochiˎ come si suol dire per proverbio delle lacrime
+                    del Cocco- </line>
+                <line xml:id="z187vline24">drillo, gli diedero la fava bianca; onde non potendo egli
+                    à i due </line>
+                <line xml:id="z187vline25">terzi delle nere arrivare, che tante ne gli bisognavano,
+                    restò con- </line></zone>
+            <zone xml:id="z188r" n="393">
+                <add place="margin right top">188</add>
+                <add place="margin right top">393</add>
+                <line xml:id="z188rline01">dannato; e l’altra mattina di buon’hora gli fù nella
+                    corte del Bar- </line>
+                <line xml:id="z188rline02">gello tagliata la testa. E la sera, quando gli fu il
+                    comandamento </line>
+                <line xml:id="z188rline03">dato dell’anima, non disse cosa alcuna vile, e indegna:
+                    ne d’Altri </line>
+                <line xml:id="z188rline04">si dolse mai, che d’Horazio, chiamandolo spesse volte,
+                    mentre sospi- </line>
+                <line xml:id="z188rline05">rava, traditore. Non havea mancato il Signore Horazio di
+                    raccoman- </line>
+                <line xml:id="z188rline06">darlo caldissimamente à’ Dieci, e con lettere, e à boccha
+                    per Ser </line>
+                <line xml:id="z188rline07">Cristofano suo Cancelliere. E non è dubbio, che egli
+                    ˎperche Pan- </line>
+                <line xml:id="z188rline08">dolfo si teneva con esso lui, et era quasi d’una medesima
+                    natura, </line>
+                <line xml:id="z188rline09">l’harebbe voluto scampare; ma conosciuto prima la mala
+                    disposizione </line>
+                <line xml:id="z188rline10">de’ Dieci, et intesa poi la sentenza della Quarantia,
+                    pensò piu all’ </line>
+                <line xml:id="z188rline11">utile suo, e à non nimicarsi affatto il Commessario, che
+                    al danno, </line>
+                <line xml:id="z188rline12">e dishonore del Puccino: al quale due coseˎoltra l’havere
+                    egli ri- </line>
+                <line xml:id="z188rline13">cevuto gli statichi, piu gli nocquero, che tutte l’altre.
+                    La prima </line>
+                <line xml:id="z188rline14">fù la grazia, che haveva Giovambatista nell’Universale
+                    insieme </line>
+                <line xml:id="z188rline15">col favore de’ Parenti, e amici suoi. La seconda il
+                    rispetto, che </line>
+                <line xml:id="z188rline16">hebbe il consiglio all’autorità del ricorso della
+                    Quarantia, per </line>
+                <line xml:id="z188rline17">non iscemare la riputazione, e diminuire il terrore di
+                    quel giu- </line>
+                <line xml:id="z188rline18">dizio. Onde per tutto Firenze si diceva ancora da quegli, </line>
+                <line xml:id="z188rline19">i quali giudicato<add place="below" hand="#varchi"
+                        >^</add>
+                    <add place="above" hand="#varchi">a morte</add> l’haveano, lui essere stato
+                    ingiustamente senten- </line>
+                <line xml:id="z188rline20">ziato alla morte. E costoro non la ragione, e la verità,
+                    ma una </line>
+                <line xml:id="z188rline21">cotale usanza, e corrottela seguendo, s’ingannavano
+                    fortemente. </line>
+                <line xml:id="z188rline22">percioche non doveva il Puccino ne in quel tempo, ne in
+                    quel luo- </line>
+                <line xml:id="z188rline23">go, ne in quel modo ammazzare il Capitano Giovanni.
+                    Perche così </line>
+                <line xml:id="z188rline24">faccendoˎposto che in tutte l’altre cose fusse stato
+                    innocentissimo, </line>
+                <line xml:id="z188rline25">meritava ragionevolmente non una morte sola, ma tre, se
+                    tre volte </line></zone>
+            <zone xml:id="z188v" n="394">
+                <add place="margin left top">394</add>
+                <line xml:id="z188vline01">morire si potesse. <metamark rend="verticalLine"
+                        spanTo="#z01line08"/>Conciosia cosa, che egli, secondo il diritto della
+                    milizia </line>
+                <line xml:id="z188vline02">doveva al Commessario, ò al signore Horazio ricorrere, ò
+                    almeno, <metamark rend="verticalLine" spanTo="#z188vline19w01"/></line>
+                <line xml:id="z188vline03">trovandosi egli mentito con superchieria, mostrare per
+                    iscritture, o </line>
+                <line xml:id="z188vline04">provare con testimonij ˎil che agevolmente poter fare si
+                    devea, che </line>
+                <line xml:id="z188vline05">Giovanni stava seco, e conseguentemente comandare gli
+                    poteva. </line>
+                <line xml:id="z188vline06">E se pur voleva, secondo l’abusione de’ soldati hodierni
+                    procedere </line>
+                <line xml:id="z188vline07">e prevalersi coll’arme, non doveva ammazzarlo di potenza
+                    assoluta, </line>
+                <line xml:id="z188vline08">né anco chiamarlo in quel tempo, e in quel luogo à
+                    duello, ma fargli </line>
+                <line xml:id="z188vline09">solennemente un protesto, che quando la guerra di Napoli,
+                    dove allora </line>
+                <line xml:id="z188vline10">erano comandati; e in ordine d’andare, fornita fusse,
+                    egli </line>
+                <line xml:id="z188vline11">non mancarebbe al debito dell’honor suo. Perche coloro, i
+                    quali </line>
+                <line xml:id="z188vline12">si fanno à credere, che un soprauso con un’altro soprauso
+                    can- </line>
+                <line xml:id="z188vline13">cellare, ò vendicare o si debba, ò si possa, sono in
+                    grandissimo erro- </line>
+                <line xml:id="z188vline14">re: Percioche à nïuno è lecito, perché un’Altro faccia
+                    male esso, </line>
+                <line xml:id="z188vline15">operare malamente anche egli. E nel medesimo errore si
+                    truovano </line>
+                <line xml:id="z188vline16">coloro, i quali pensano, che da huomo di valore, per
+                    vendicarsi dell’ </line>
+                <line xml:id="z188vline17">offese, ò ingiurie ricevute, si debba, non che si possa
+                    d’ogni tempo </line>
+                <line xml:id="z188vline18">et in ogni luogo contra la voglia, e i comandamenti non
+                    che senza </line>
+                <line xml:id="z188vline19">licenza de’ superiori abbandonare la Patria, e i Padroni
+                        <w xml:id="z188vline19w01">loro</w>. La </line>
+                <line xml:id="z188vline20">fama, che il Puccino fusse ingiustamente alla morte
+                    condennato, si </line>
+                <line xml:id="z188vline21">confermò, et accrebbe per una provvisione, che fu vinta
+                    nel consi- </line>
+                <line xml:id="z188vline22">glio maggiore agli venti tre giorni d’Aprile; nella
+                    quale, parte si </line>
+                <line xml:id="z188vline23">limitava, e parte si correggeva<add place="below"
+                        hand="#bonsi">./.</add><del hand="#bonsi"><add place="above" hand="#bonsi"
+                            >con</add></del>la legge della Quarantia: e fra l’al- </line>
+                <line xml:id="z188vline24">tre cose, essendo quel ricorso piu tosto giudizio
+                    barbaro, che civile, </line>
+                <line xml:id="z188vline25">gli levarono imprudentissimamenne tutto quello, si può
+                    dire, che egli </line></zone>
+            <zone xml:id="z189r" n="395">
+                <add place="margin right top">189</add>
+                <add place="margin right top">395</add>
+                <line xml:id="z189rline01">di buono, e di ragionevole haveva, e ciò fù l’appello.
+                    Perche con- </line>
+                <line xml:id="z189rline02">siderando io alcuna volta meco medesimo onde possa essere
+                    avve- </line>
+                <line xml:id="z189rline03">nuto, che nella Republica Fiorentina ˎper tacere al
+                    presente dell’ </line>
+                <line xml:id="z189rline04">altre, fusse d’ogni tempo così poca cognizione delle cose
+                    civili, che </line>
+                <line xml:id="z189rline05">nessuno magistrato, ò altro ordinamento d’alcuna
+                    importanza, fuo- </line>
+                <line xml:id="z189rline06">ri solamente il consiglio grande, in lei si trovasse, che
+                    bene, e pru- </line>
+                <line xml:id="z189rline07">dentemente ordinato chiamare si potesse, anzi che
+                    biasimevole, e ti- </line>
+                <line xml:id="z189rline08">rannico non fusse, mi risolvo due essere state di ciò le
+                    cagioni prin- </line>
+                <line xml:id="z189rline09">cipali: l’una le molte sette, e divisioni cittadine, che
+                    in ella abbon- </line>
+                <line xml:id="z189rline10">darono sempre, le quali non secondo, che fare si doveva,
+                    ma seco<add place="inline">n</add>- </line>
+                <line xml:id="z189rline11">do, che meglio alla parte vincitrice metteva, riformavano
+                    di ma- </line>
+                <line xml:id="z189rline12">no in mano la republica: <metamark rend="underlined"
+                        spanTo="#z189vline06w01"/>la seconda cagione, la quale per avven- </line>
+                <line xml:id="z189rline13">tura porre la prima si doveva, <add place="below"
+                        hand="#varchi">^</add>
+                    <add place="above" hand="#varchi">e</add> la grande autorità, che general- <add
+                        place="margin right" hand="#antella">Biasima i dottori di legge</add></line>
+                <line xml:id="z189rline14">mente v’hebbero d’ogni stagione i Dottori delle leggi:
+                    percio che </line>
+                <line xml:id="z189rline15">credendosi quasi da tutti gli huomini, che costoro, come
+                    dottori </line>
+                <line xml:id="z189rline16">sappiano tutte le cose, e siano, e massimamente nel
+                    governare, e reg- </line>
+                <line xml:id="z189rline17">gere gli stati da più, che gl’ altri non sono, dove
+                    eglino come Dot- </line>
+                <line xml:id="z189rline18">tori pochissime ne sanno, e bene spesso da meno degl’
+                    Altri si truo- </line>
+                <line xml:id="z189rline19">vano, segue di necessità, che ricorrendosi comunemente à
+                    loro; </line>
+                <line xml:id="z189rline20">ed essi ò per poca prudenza, essendo al tutto per la
+                    rozzezza de’ </line>
+                <line xml:id="z189rline21">tempi passati, et imperizia degl’Interpetri moderni da
+                    quegli </line>
+                <line xml:id="z189rline22">antichi Giureconsulti, i quali prudentissimi, e
+                    giudiziosissimi fu- </line>
+                <line xml:id="z189rline23">rono, in ogni cosa degenerati; ò per molta malizia,
+                    essendo tra </line>
+                <line xml:id="z189rline24">loro piu coloro stimati, et in maggior pregio havuti, e
+                    conseguen- </line>
+                <line xml:id="z189rline25">temente piu adoperati, i quali meglio il torto difendere
+                    sanno, </line></zone>
+            <zone xml:id="z189v" n="396">
+                <add place="margin left top">396</add>
+                <line xml:id="z189vline01">non secondo la scienza civile, la quale ne i loro libri
+                    non essendo, da </line>
+                <line xml:id="z189vline02">loro apparare non si può, ma secondo il voler proprio, ò
+                    il parere </line>
+                <line xml:id="z189vline03">de i loro interpetri, huomini per lo piu da ogni polizia,
+                    e civilità lon- </line>
+                <line xml:id="z189vline04">tanissimi, consigliando, e giudicando, segue ˎdico, di
+                    necessità, che le </line>
+                <line xml:id="z189vline05">cose della Republica di Firenze così andassero, come elle
+                    andava- </line>
+                <line xml:id="z189vline06"><w xml:id="z189vline06w01">no.</w> Comunque si fusse,
+                    verissima cosa è, che dopo cotali sette, e di- </line>
+                <line xml:id="z189vline07">visioni, una parte, e fazzione sola di cittadini, ha
+                    sempre gl' ho- </line>
+                <line xml:id="z189vline08">nori, e gl' utili della città goduto tutti, e l’altra
+                    sbattuta, e scontenta </line>
+                <line xml:id="z189vline09">s’è stata sedendo à vedere, aspettando il tempo, e
+                    l’occasione di po- </line>
+                <line xml:id="z189vline10">ter fare il somigliante ancor ella. Il perche soleva dire
+                    France- </line>
+                <line xml:id="z189vline11">sco Vettori, che à volere, che Firenze lungamente
+                    Republica si ma<add place="inline">n</add>- </line>
+                <line xml:id="z189vline12">tenesse, era una di queste due cose necessaria: ò che
+                    l’entrate del </line>
+                <line xml:id="z189vline13">comune si raddoppiassero, ò che la metà si scemasse de’
+                    Cittadini. </line>
+                <line xml:id="z189vline14">Con la medesima provvisione nel medesimo giorno, e
+                    consiglio si </line>
+                <line xml:id="z189vline15">vinse, quasi indovinassero quello, che à Jacopo Alamanni
+                    avve- </line>
+                <line xml:id="z189vline16">nire dovea, che ne i casi repentini di stato potessero i
+                    Magnifici </line>
+                <line xml:id="z189vline17">Signori, i Dieci, e gl'Otto insieme legittimamente
+                    ragunati puni- </line>
+                <line xml:id="z189vline18">re fra tre giorni il delinquente, ogni volta che il
+                    partito per gli due </line>
+                <line xml:id="z189vline19">terzi de i presenti si vincesse, e dove la punizione
+                    dovesse essere </line>
+                <line xml:id="z189vline20">la morte, perche altramente era necessario, che per lo
+                    ricorso della </line>
+                <line xml:id="z189vline21">Quarantia secondo la legge si procedesse, per la quale
+                    quindici gior- </line>
+                <line xml:id="z189vline22">ni si concedeva à ciascun Reo à potere comparire; se
+                    nelle citazio- </line>
+                <line xml:id="z189vline23">ni detti quindici giorni abbreviati non fussero. E non
+                    molto pri- </line>
+                <line xml:id="z189vline24">ma per un’altra provvisione un’altra legge s’era vinto,
+                    degna di </line>
+                <line xml:id="z189vline25">molta commendazione, la quale fù, che ogni notaio, oltra
+                    il dover </line></zone>
+            <zone xml:id="z190r" n="397">
+                <add place="margin right top">190</add>
+                <add place="margin right top">397</add>
+                <line xml:id="z190rline01">tenere i suoi protocolli non in filze, ma in libri, fusse
+                    costretto qua- </line>
+                <line xml:id="z190rline02">lunche strumento egli rogasse, alla gabella de’ contratti
+                    rappresentare; </line>
+                <line xml:id="z190rline03">et il Notaio delle cedole, ò vero del registro, era
+                    obligato à tradur- </line>
+                <line xml:id="z190rline04">re in volgare, e copiare in su quattro libri, uno per
+                    quartiere, tutti </line>
+                <line xml:id="z190rline05">i detti contratti. E questo fecero, perche si considerò,
+                    che le parole, </line>
+                <line xml:id="z190rline06">le quali usano ordinariamente i Notai, non essendo ne
+                    latine, ne </line>
+                <line xml:id="z190rline07">toscane, significano molte volte non quello, che i
+                    contraenti, ò i te- </line>
+                <line xml:id="z190rline08">statori intendono di voler dire, e credono, che elle
+                    significhino, ma </line>
+                <line xml:id="z190rline09">quello, à che i Legistiˎ ò vero, ò falso, che sia, le
+                    tirano. Di manie- </line>
+                <line xml:id="z190rline10">ra, che nïuno, quantunque accorto, e diligente, può
+                    alcuno testa- </line>
+                <line xml:id="z190rline11">mento fare, eziandio col consiglio del savio che così si
+                    chiamano </line>
+                <line xml:id="z190rline12">i Dottori, il quale sia tanto chiaro, che egli possa
+                    restar sicuro </line>
+                <line xml:id="z190rline13">che di lui dopo la morte sua dubitare, e piatire non si
+                    debba. Ma </line>
+                <line xml:id="z190rline14">questa, come l’altre leggi Fiorentineˎ per non far
+                    mendace il pro- </line>
+                <line xml:id="z190rline15">verbio, e confermare quello, che Dante ne scrisse, non
+                    durò molto. </line>
+                <line xml:id="z190rline16">E per mio giudizio, come piu utile, e di minor briga,
+                    così per ven- </line>
+                <line xml:id="z190rline17">tura ancora piu durevole stato sarebbe, se ordinato si
+                    fusse, che </line>
+                <line xml:id="z190rline18">i contratti, e l’ultime volontà, non altrame<add
+                        place="inline">n</add>te che lescritte, e i li- </line>
+                <line xml:id="z190rline19">bri de i Mercatanti, non in altra lingua, che in quella,
+                    la quale </line>
+                <line xml:id="z190rline20">si favella, scrivere da tutti, e celebrare si dovessero:
+                    affine che di </line>
+                <line xml:id="z190rline21">se, e delle sue cose potesse ciascuno non quello, che i
+                    Notaij, ò i Dot- </line>
+                <line xml:id="z190rline22">tori, ma quello, che voleva egli stesso, disporre. E non
+                    gli fusse ne- </line>
+                <line xml:id="z190rline23">cessario ancora delle cose chiarissime disputare. Vinsero
+                    ancora </line>
+                <line xml:id="z190rline24">che tutti i Rettori del contado fussero tenuti à dover
+                    dar noti- </line>
+                <line xml:id="z190rline25">zia quindici giorni presso alla fine del loro ufizio al
+                    Cancelliere </line></zone>
+            <zone xml:id="z190v" n="398">
+                <add place="margin left top">398</add>
+                <line xml:id="z190vline01">de’ provveditori de’ contratti di tutti quanti i
+                    matrimonij, e aliena- </line>
+                <line xml:id="z190vline02">zioni di beni, che nel suo popolo à tempo della sua
+                    rettoria fatti, e </line>
+                <line xml:id="z190vline03">fatte si fusseno. E di piu, che tutte le doti, delle
+                    quali la gabella essere </line>
+                <line xml:id="z190vline04">stata pagata si mostrasse, havessono, eziandio che non
+                    apparisse con- </line>
+                <line xml:id="z190vline05">tratto, l’essecuzione parata non altramente, che se il
+                    contratto fatto </line>
+                <line xml:id="z190vline06">si fusse. E perche la carestia di tutte quante le cose
+                    andava con- </line>
+                <line xml:id="z190vline07">tinuamente crescendo, vollero, che quattro ufiziali per
+                    la maggiore, </line>
+                <line xml:id="z190vline08">et uno per la minore nel consiglio grande si deputassero,
+                        <metamark rend="underlined" spanTo="#z190vline11"/>i quali </line>
+                <line xml:id="z190vline09">furono questi: M. Giovanvettorio <choice>
+                        <abbr>dim</abbr>
+                        <expan>di messer</expan>
+                    </choice> Tommaso Sderini. </line>
+                <line xml:id="z190vline10">Bartolomeo di Francesco Panciatichi. Migiotto di Bardo
+                    de' Bardi. </line>
+                <line xml:id="z190vline11">Buonaccorso di Lorenzo Pitti. E Francesco di Filippo
+                    Calandri. </line>
+                <line xml:id="z190vline12">A' quali per lo medesimo consiglio s’aggiunsero dodici
+                    giorni di poi, </line>
+                <line xml:id="z190vline13"><metamark rend="underlined"><del hand="#baldini"
+                            >questi</del></metamark> altri cinque: <metamark rend="underlined"
+                        spanTo="#z190vline15"/>Antonfrancesco degl'Albizi. Zanobi di </line>
+                <line xml:id="z190vline14">Francesco Carnesecchi. Tanai di Piero de Nerli. Giovanni </line>
+                <line xml:id="z190vline15">di Salvi Borgherini. E Giovanni di Zanobi di Maestro
+                    Luca. </line>
+                <line xml:id="z190vline16">In questo tempo arrivò il Visconte di Turena à Livorno,
+                    mandato </line>
+                <line xml:id="z190vline17">dal Re Cristianissimo al Papa, sì per raddolcirlo un
+                    poco, e far- </line>
+                <line xml:id="z190vline18">gli credere, se potuto havesse, che la promessione, la
+                    quale egli nell’ </line>
+                <line xml:id="z190vline19">ultima rinovazione, e confermazione della lega fatto
+                    havea di do- </line>
+                <line xml:id="z190vline20">ver conservare la libertà à’ Fiorentini, e da i loro
+                    nemici difen- </line>
+                <line xml:id="z190vline21">dergli; del che s’era forte sdegnato, et altero Clemente,
+                    non s’era </line>
+                <line xml:id="z190vline22">fatta contra lui propriamente, ma per molte, e diverse
+                    cagioni par- </line>
+                <line xml:id="z190vline23">te utili, e parte necessarie, e sì per confortarlo, e
+                    pregarlo à do- </line>
+                <line xml:id="z190vline24">vere entrare nella lega anch’egli: la qual cosa il Papa
+                    fare no<add place="inline">n</add>
+                </line>
+                <line xml:id="z190vline25">volle, scusandosi con dire, che non havendo egli ne
+                    danari, ne ri- </line></zone>
+            <zone xml:id="z191r" n="399">
+                <add place="margin right top">191</add>
+                <add place="margin right top">399</add>
+                <line xml:id="z191rline01">putazione non accadeva dichiararsi. E perche il Viconte
+                    era di mol- </line>
+                <line xml:id="z191rline02">ta autorità, et in gran condizione appresso il
+                    Cristianissimo, fu </line>
+                <line xml:id="z191rline03">eletto Mainardo Cavalcanti commessario generale à Pisa, e
+                    à Li- </line>
+                <line xml:id="z191rline04">vorno per doverlo ricevere, et honorare nell’un luogo, e
+                    nell’altro: </line>
+                <line xml:id="z191rline05"><metamark rend="underlined" spanTo="#z191rline06w01"/>et
+                    a <choice>
+                        <abbr>m</abbr>
+                        <expan>messer</expan>
+                    </choice> Marco Capitano di Pisa si fecer buone per questo conto </line>
+                <line xml:id="z191rline06">lire <w xml:id="z191rline06w01">cinquecentotto</w>.In
+                    Firenze fù vicitato molto, e trattenuto; e </line>
+                <line xml:id="z191rline07">nel suo partire si mandò Carlo Gondi, che per tutto il
+                    dominio Fio- </line>
+                <line xml:id="z191rline08">rentino l’accompagnasse; e le spese à lui, e à tutti i
+                    suoi larga- </line>
+                <line xml:id="z191rline09">mente di quello del publico facesse. Arrivò in questo
+                    tempo me- </line>
+                <line xml:id="z191rline10">desimo messer Alessandro Guerrino à Firenze, mandatovi da
+                    Alfon- </line>
+                <line xml:id="z191rline11">so duca di Ferrara in Ambasciadore, et hebbe
+                    honoratamente udienza </line>
+                <line xml:id="z191rline12">publica. <metamark rend="verticalLine"
+                        spanTo="#z191rline19w01"/>Occorse in questi di stessi, che Lodovico de'
+                    Nobili, il qua- </line>
+                <line xml:id="z191rline13">le dicemmo essersi gia fuggito da Vinegia sconosciuto,
+                    quando fù </line>
+                <line xml:id="z191rline14">preso messer Baldassarre, trovandosi commessario in luogo
+                    di Ma- </line>
+                <line xml:id="z191rline15">inardo Cavalcanti à Poggibonsi, tra l'altre sciocchezze,
+                    che egli </line>
+                <line xml:id="z191rline16">fece, ballò in publico à una cena, egli fu in una veglia
+                    tinto il </line>
+                <line xml:id="z191rline17">viso da una Donna; per le quali cose accusato, e al
+                    giudizio </line>
+                <line xml:id="z191rline18">della Quarantia rimesso, fù, non ostante che cognato
+                    fusse de' </line>
+                <line xml:id="z191rline19">Soderini, casso dell'ufizio, et <w
+                        xml:id="z191rline19w01">ammonito</w>.Papa Cleme<add place="inline">n</add>te
+                        cresce<add place="inline">n</add>- </line>
+                <line xml:id="z191rline20">do tuttavia d’autorità, e di forze, venuto il giovedi
+                    santo </line>
+                <line xml:id="z191rline21">scomunicò publicame<add place="inline">n</add>te i
+                    Viniziani, come quegli, che Cervia, </line>
+                <line xml:id="z191rline22">e Ravenna città della Chiesa occupate haveano, senza piu
+                    vo- </line>
+                <line xml:id="z191rline23">lerle restituire. E il medesimo fece al Duca di Ferrara
+                    per </line>
+                <line xml:id="z191rline24">cagione di Modena, e Reggio. <choice>
+                        <abbr>m</abbr>
+                        <expan>messer</expan>
+                    </choice> Antonio Pucci, il quale pri- </line>
+                <line xml:id="z191rline25">ma fu Vescovo di Pistoia, e poi Cardinale, essendo stato
+                    man- </line></zone>
+            <zone xml:id="z191v" n="400">
+                <add place="margin left top">400</add>
+                <line xml:id="z191vline01">dato da Clemente al re Francesco<add place="below"
+                        hand="#varchi">^</add>
+                    <add place="above" hand="#varchi">=</add>
+                    <add place="margin left" hand="#varchi">=<lb/>^<lb/>Per cercare di per-
+                        suadergli, che il dichia- rarsi il Papa, non era ne utile, ne à pro- posito
+                        per la Lega, ma che andava in Hispagna per ammo- nire e riprendere Cesare,
+                        il che ma dubitando il cristianissimo, che v’andasse per altra cagione, non
+                        ha- vea voluto dargli licenza</add> ottenne alla per fine di poter </line>
+                <line xml:id="z191vline02">passare in Ispagna <del hand="#varchi">à Cesare</del>.
+                    Mentre queste cose si facevano, </line>
+                <line xml:id="z191vline03">Monsignor di Lutrec partitosi da San Severo, e gitosene
+                    senza </line>
+                <line xml:id="z191vline04">haver mai veduto nemico in viso, insino sotto Troia, si
+                        prese<add place="inline">n</add>tò </line>
+                <line xml:id="z191vline05">dopo alcune scaramuccie coll’esercito in battaglia alle
+                        ge<add place="inline">n</add>ti im- </line>
+                <line xml:id="z191vline06">periali, e à suono di trombe le chiamò, scaricando loro
+                    contra l’ </line>
+                <line xml:id="z191vline07">artiglierie, a far giornata. Ma il Principe d’Orange piu
+                    per </line>
+                <line xml:id="z191vline08">gl' altrui consigli, che di volontà propria, essendo egli
+                    di sua </line>
+                <line xml:id="z191vline09">natura superbo, impaziente, e feroce, s’astenne dal
+                    combattere; </line>
+                <line xml:id="z191vline10">conoscendo non esser savio partito arrischiare in un
+                    fatto d’arme </line>
+                <line xml:id="z191vline11">solo, non pure il Reame di Napoli, ma eziandio il ducato
+                    di </line>
+                <line xml:id="z191vline12">Melano: ne havendo cagion nessuna, la quale l’invitasse,
+                    non </line>
+                <line xml:id="z191vline13">che sforzasse à doversi affrontare, se non che le bande
+                    nere, <add place="below" hand="#varchi">^</add>
+                    <add place="above" hand="#varchi">T°</add><add place="margin left"
+                        hand="#varchi">T°<lb/>^<lb/>havendo nel cammino crudelissimamente
+                        saccheggiato l’Aquila la quale benigna- mente ricevute gli havea,</add>an- </line>
+                <line xml:id="z191vline14">cora arrivate non erano, la riputazione delle quali era
+                    sì gran- </line>
+                <line xml:id="z191vline15">de, che tosto, che egli intese il Signor Horazio
+                    avvicinarsi con </line>
+                <line xml:id="z191vline16">elle al campo, deliberò ˎnon si tenendo sicuro ancora
+                    dentro gl' </line>
+                <line xml:id="z191vline17">alloggiamenti, i quali erano fortissimi, di partire; e
+                    così di notte </line>
+                <line xml:id="z191vline18">tempo ˎlasciati molti fuochi accesi, inviò l’esercito,
+                    senza che </line>
+                <line xml:id="z191vline19">i Franzesi per una folta nebbia, la quale in sullo
+                    schiarire dell’ </line>
+                <line xml:id="z191vline20">alba si levò, se n’accorgessero: Et avvengadio, che i
+                    Capitani </line>
+                <line xml:id="z191vline21">quasi tutti fossero di parere, che i nemici, essendo
+                    spaventati </line>
+                <line xml:id="z191vline22">e poco meno, che rotti, seguitare si dovessono;
+                    nientedimanco </line>
+                <line xml:id="z191vline23">Lutrec dietro l’infelice consiglio di Pietro Navarro,
+                    volle, per </line>
+                <line xml:id="z191vline24">non lasciarsi dietro le spalle luogo alcuno nimico, che
+                    prima la </line>
+                <line xml:id="z191vline25">terra di Melfi si combattesse, à guardia della quale
+                    Sergiano </line></zone>
+            <zone xml:id="z192r" n="401">
+                <add place="margin right top">192</add>
+                <add place="margin right top">401</add>
+                <line xml:id="z192rline01"> Caracciolo, huomo di chiaro valore, che n’era Principe,
+                    manda- </line>
+                <line xml:id="z192rline02">tovi poco innanzi da Orange con sei compagnie di fanti e
+                    con </line>
+                <line xml:id="z192rline03">una buona banda d’uomini d’arme, si ritrovava. Men- </line>
+                <line xml:id="z192rline04">tre che Melfi era dal Navarro valorosamente combattuta, e
+                    dal </line>
+                <line xml:id="z192rline05">Caracciolo valorosame<add place="inline">n</add>te
+                    difesa, ancora che alla fineˎfatto prigione il suo </line>
+                <line xml:id="z192rline06">Prencipe, fusse presa, e crudelissimame<add
+                        place="inline">n</add>te saccheggiata, gl’Imperiali </line>
+                <line xml:id="z192rline07">per diverse strade, à pena credendo à se stessi, che i
+                    Franzesi, arrivate </line>
+                <line xml:id="z192rline08">le bande nere, nelle quali erano molti, e destrissimi
+                    Archibusieri, </line>
+                <line xml:id="z192rline09">seguitati non gl'havessero, giunsero per inaspettato
+                    benifizio, ò della fortuna loro, </line>
+                <line xml:id="z192rline10">ò della sventura di Lutrec, salvi à Napoli: e co<add
+                        place="inline">n</add>- </line>
+                <line xml:id="z192rline11">tro la voglia del Marchese del Guasto, il quale non men
+                    pietoso, </line>
+                <line xml:id="z192rline12">che valoroso essendo, consigliava, perche il giardino d'
+                    Italia no<add place="inline">n</add>
+                </line>
+                <line xml:id="z192rline13">divenisse nido, e quasi preda di così barbare nazioni,
+                    che le </line>
+                <line xml:id="z192rline14">genti non dentro, ma fuori all’intorno della città
+                    alloggiare si </line>
+                <line xml:id="z192rline15">dovessero, nella terra si ritirarono: dove pochi giorni
+                    appresso </line>
+                <line xml:id="z192rline16">arrivò con tutto l’esercito Lutrec, e con molte trincee e
+                    ga- </line>
+                <line xml:id="z192rline17">gliardissimi ripari s’àccampò sotto Napoli, e con grande
+                    spe- </line>
+                <line xml:id="z192rline18">ranza di pigliarlo, ò di doverlo à tal conducere, che
+                    egli in bre- </line>
+                <line xml:id="z192rline19">ve s’arrendesse, l’assediò. Il duca d’Urbino, poscia che </line>
+                <line xml:id="z192rline20">egli hebbe le genti de’ Vineziani dietro quelle de’
+                    Fiorentini à </line>
+                <line xml:id="z192rline21">congiugnersi con Lutrec mandato, le quali tante no<add
+                        place="inline">n</add> erano, che </line>
+                <line xml:id="z192rline22">elleno ˎsecondo che scrisse Ser Giovanni Naldini haver
+                    detto il </line>
+                <line xml:id="z192rline23">Signor Malatesta, correre le poste non havessero potuto,
+                        <add place="below" hand="#varchi">^</add>
+                    <add place="above" hand="#varchi">chiesta piu tosto, che</add> otte- </line>
+                <line xml:id="z192rline24">nuta la licenza, si trasferi al suo stato; <add
+                        place="inline" hand="#varchi">|</add><add place="margin lower"
+                        hand="#varchi">|Donde non partì <add place="below">^</add>
+                        <add place="above">mai</add>, ancora, che i Viniziani piu volte il
+                        mandassino à chiamare, havendo egli, o fingendo d’havea paura del suo stato
+                        per la vicinita delle genti nemiche, infino che essi</add><del
+                        hand="#varchi">dove i Vineziani gli</del>
+                </line>
+                <line xml:id="z192rline25"><del hand="#varchi">mandarono <choice>
+                            <abbr>m</abbr>
+                            <expan>messer</expan>
+                        </choice> Niccolò Tiepolo oratore con danari; perche du-</del>
+                </line></zone>
+            <zone xml:id="z192v" n="402">
+                <add place="margin right top">402</add>
+                <line xml:id="z192vline01">bitando <del hand="#varchi">essi</del>, che egli con
+                    Cesare, il quale molto il disiderava non s' </line>
+                <line xml:id="z192vline02">acconciasse; e tanto piu, che il Signore Ascanio Colonna
+                    gli pro- </line>
+                <line xml:id="z192vline03">metteva, se ciò facesse, di volergli le ragioni, ch’egli
+                    sopra lo </line>
+                <line xml:id="z192vline04">stato d’Urbino pretende, cedere, e rinunziare <add
+                        place="inline" hand="#varchi">X</add>
+                    <add place="margin left" hand="#varchi">X <lb/> fattolo venire à Vinegia, lo
+                        ricon- dussono nel prin- cipio di Marzo</add>
+                    <del hand="#varchi">l'haveano da</del>
+                </line>
+                <line xml:id="z192vline05"><del hand="#varchi">capo</del> per cinque anni <del
+                        hand="#varchi">condotto</del>, arrogendogli cento huomini d’arme, </line>
+                <line xml:id="z192vline06">e crescendogli la provvisione del suo piatto infino à
+                    diecimila </line>
+                <line xml:id="z192vline07">fiorini, quanto il Conte <del hand="#varchi">da</del>
+                    <add place="above" hand="#varchi">i</add>Pitigliano, e poi l’Alviano havu- </line>
+                <line xml:id="z192vline08">ti n’haveano, e di più cinquanta huomini d’arme, ò
+                    volesse cen- </line>
+                <line xml:id="z192vline09">to cavagli leggieri al figliuolo con mille ducati per la
+                    sua tavola.<add place="below" hand="#varchi">^</add>
+                    <add place="above" hand="#varchi">T</add><add place="margin left" hand="#varchi"
+                        >T<lb/>˄<lb/> E, per tenerlo ben disposto, mentre, che Egli se ne ritorna-
+                        va al suo stato, gli mandarono dietro <choice>
+                            <abbr>m</abbr>
+                            <expan>messer</expan>
+                        </choice> Niccolò Tiepolo oratore con tre- mila ducati.</add></line>
+                <line xml:id="z192vline10">I nuovi Signori per dover sedere Maggio, e Giugno col
+                    medesimo Gonfalo- </line>
+                <line xml:id="z192vline11">niere Niccolo Capponi furono: Bartolommeo di Lorenzo
+                    Amadori, </line>
+                <line xml:id="z192vline12">e Benedetto di Tommaso Giovanni, per santo Spirito. Piero
+                    d’ </line>
+                <line xml:id="z192vline13">Antonio Girolami, e Veri di Girolamo Guidacci per santa
+                    Croce. </line>
+                <line xml:id="z192vline14">Piero di Neri Venturi, e Girolamo di Zanobi Mori per
+                    santa Ma </line>
+                <line xml:id="z192vline15">ria novella. Zanobi d’Antonio Bucherelli, e Ridolfo di
+                    Giuliano </line>
+                <line xml:id="z192vline16">Marucelli, per San Giovanni. E il loro Notaio fù Ser
+                    Niccolo di </line>
+                <line xml:id="z192vline17">Niccolò di <choice>
+                        <abbr>m</abbr>
+                        <expan>messer</expan>
+                    </choice> Nello da San Gimignano. Al tempo di questa </line>
+                <line xml:id="z192vline18">Signoria stette la città fra grande speranza, e non
+                    picciolo timore per </line>
+                <line xml:id="z192vline19">le cagioni che di sotto si diranno. E nel primo lor mese
+                    proposero, </line>
+                <line xml:id="z192vline20">e vinsero molte, e varie provvisioni, delle quali
+                    racconteremo solamente </line>
+                <line xml:id="z192vline21">le più importanti, con quella maggior brevità, e
+                    chiarezza, che saper- </line>
+                <line xml:id="z192vline22">remo, essendo elleno state composte non meno oscure, e
+                    intricate, che </line>
+                <line xml:id="z192vline23">lunghe. Primieramente per far piu danari, che si poteva,
+                    si crea- </line>
+                <line xml:id="z192vline24">rono i nuovi ufiziali di vendite, e s’aggiunse loro nuova
+                    autorità, </line>
+                <line xml:id="z192vline25">cioè, che potessero, anzi dovessero i residui de i due
+                    accatti così del </line>
+            </zone>
+        </surface>
+    </sourceDoc>
+    <text>
+        <body>
+            <p/>
+        </body>
+    </text>
+</TEI>
